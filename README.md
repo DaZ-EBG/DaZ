@@ -11,7 +11,9 @@ Auf dem iPad in Safari öffnen → Teilen → „Zum Home-Bildschirm“.
 - **Phrases:** Sätze für den Schulalltag. Antippen liest den deutschen Satz vor, „Show“ zeigt ihn groß auf dem Bildschirm.
 - **Practise:** Lektion und Modus frei wählen (verschiebt keine Fächer).
 
-Kein Lehrkraft-Bereich, kein Foto-Senden, keine eigenen Wörter: Neue Vokabeln kommen nur über dieses Repository.
+- **Settings** (oben rechts, ohne PIN): „My progress“ (gelernte Wörter, Trefferquote, Lernzeit, Lerntage, schwierige Wörter mit „Practise these words“, Stand pro Modus) und „Settings“ (Übungen pro Runde, neue Wörter pro Runde, Sicherungscode, Zurücksetzen).
+
+Kein Foto-Upload, keine eigenen Wörter: Neue Vokabeln kommen nur über dieses Repository.
 
 ## Lernmodi
 Leicht: Flashcard, Multiple choice, Match pairs, **der/die/das**.
@@ -21,8 +23,8 @@ Beim Eintippen gilt:
 - Nomen nur mit Artikel richtig. Fehlender oder falscher Artikel zählt als falsch, mit Hinweis.
 - Fehlende Umlaute (a statt ä, ss statt ß) und Kleinschreibung zählen als richtig, mit Hinweis.
 
-## Feste Einstellungen
-25 Übungen pro Runde, höchstens 8 neue Wörter pro Runde (in `src/app.html`: `PER_DAY`, `NEW_PER_ROUND`).
+## Einstellungen
+Die Schülerin stellt selbst ein: Übungen pro Runde (Standard 25) und neue Wörter pro Runde (Standard 8).
 Keine Konten, keine Namen, keine Synchronisation. Der Lernstand liegt nur im localStorage des iPads (Schlüssel `wortkasten-daz.v1`).
 
 ## Aufbau

@@ -102,6 +102,30 @@ button,select,input,textarea{font:inherit;color:inherit}
 .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px}
 label.f{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:700;color:var(--muted)}
 .in{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);font-size:17px;color:var(--ink)}
+/* settings */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media (max-width:600px){.kpis{grid-template-columns:1fr 1fr}}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:2px}
+.kpi b{font-family:var(--f-display);font-size:28px;font-weight:800;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--muted)}
+.days{display:grid;grid-template-columns:repeat(14,1fr);gap:4px}
+.day{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;color:var(--muted)}
+.day i{display:block;width:100%;aspect-ratio:1;max-width:100%;border-radius:5px;background:var(--line)}
+.mrow{display:grid;grid-template-columns:150px 1fr 64px;gap:10px;align-items:center}
+@media (max-width:460px){.mrow{grid-template-columns:1fr 64px}.mrow .bar{grid-column:1/-1;grid-row:2}}
+.mrow .name{font-weight:700;font-size:15px;min-width:0}
+.mrow .name span{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.vrow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.vrow:first-child{border-top:0}
+.vw b{display:block;overflow-wrap:anywhere} .vw span{color:var(--muted);font-size:15px;overflow-wrap:anywhere}
+.dots{display:flex;gap:3px}
+.dot{width:12px;height:12px;border-radius:3px;background:var(--b0)}
+.dot.na{background:transparent;border:1px dashed var(--line)}
+@media (max-width:460px){.vrow{grid-template-columns:minmax(0,1fr) auto}.vrow .dots{grid-column:1/-1;grid-row:2}}
+.tag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--hl);color:var(--hl-ink)}
+textarea.in{min-height:140px;resize:vertical;font-size:15px}
+.prob{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line)}
+.prob:first-child{border-top:0}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;font-weight:700;z-index:20;max-width:calc(100% - 32px)}
 .warn{background:var(--bad-soft);color:var(--bad);border-radius:12px;padding:10px 14px;font-size:14px}
 details summary{cursor:pointer;font-weight:700}
@@ -155,7 +179,7 @@ const LIGHT = ["karte","mc","paare"];
 const INTERVAL = [0,1,2,4,7,14];
 const hasTTS = typeof window.speechSynthesis !== "undefined" && typeof window.SpeechSynthesisUtterance !== "undefined";
 const SPEAK = '<svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>';
-const WD = ["So","Mo","Di","Mi","Do","Fr","Sa"];
+const WD = ["Su","Mo","Tu","We","Th","Fr","Sa"];
 
 /* ---------- helpers ---------- */
 const uid = ()=>Math.random().toString(36).slice(2,9)+Date.now().toString(36).slice(-4);
@@ -175,18 +199,18 @@ function lev(a,b){const m=a.length,n=b.length;const d=Array.from({length:m+1},(_
 
 /* ---------- storage ---------- */
 function seed(){
-  return {v:1,phrases:[],lessons:[{id:"own",name:"My words"}],words:[],prog:{},log:[],sessions:[],removed:[]};
+  return {v:1,perDay:25,newPerDay:8,phrases:[],lessons:[{id:"own",name:"My words"}],words:[],prog:{},log:[],sessions:[],removed:[]};
 }
 let storageOk=true;
 function load(){
   try{const s=localStorage.getItem(KEY);if(s){const o=JSON.parse(s);if(o&&Array.isArray(o.words))return fix(o)}}catch(e){storageOk=false}
   return seed();
 }
-function fix(o){o.lessons=o.lessons||[];if(!o.lessons.some(l=>l.id==="own"))o.lessons.push({id:"own",name:"My words"});o.prog=o.prog||{};o.log=o.log||[];o.sessions=o.sessions||[];o.removed=o.removed||[];o.phrases=o.phrases||[];return o}
+function fix(o){o.lessons=o.lessons||[];if(!o.lessons.some(l=>l.id==="own"))o.lessons.push({id:"own",name:"My words"});o.prog=o.prog||{};o.log=o.log||[];o.sessions=o.sessions||[];o.removed=o.removed||[];o.perDay=o.perDay||25;o.newPerDay=o.newPerDay||8;o.phrases=o.phrases||[];return o}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){storageOk=false}}
 
 let S = load();
-let ui = {view:"home",confirm:null,sess:null,toast:null,practice:{lesson:"all",mode:"mix"},news:[],phraseCat:0,show:null};
+let ui = {view:"home",stab:"progress",confirm:null,sess:null,toast:null,practice:{lesson:"all",mode:"mix"},news:[],phraseCat:0,show:null};
 
 /* ---------- model ---------- */
 const wordById = id=>S.words.find(w=>w.id===id);
@@ -218,7 +242,7 @@ const secure = w=>{const ms=wordModes(w);return ms.length>0&&ms.every(m=>P(w.id,
 const started = w=>MODES.some(m=>P(w.id,m.id).box>0);
 /* Grundwortschatz: Lektionen "Basis – …" (IDs beginnen mit basis-) laufen nebenbei mit */
 const BASIS_NEW = 0;
-const PER_DAY = 25, NEW_PER_ROUND = 8; /* fest eingestellt, kein Einstellungsbereich */
+
 const isBasis = ()=>false; /* DaZ: kein separater Grundwortschatz */
 const basisLabel = name=>String(name).replace(/^Basis\s*[–-]\s*/,"");
 function basisStartedToday(){
@@ -263,12 +287,12 @@ function buildDaily(){
     }
   }
   rev.sort((a,b)=>a.due-b.due||a.box-b.box);
-  let items=rev.slice(0,PER_DAY);
-  const space=PER_DAY-items.length;
+  let items=rev.slice(0,S.perDay);
+  const space=S.perDay-items.length;
   const groups=[...neu.values()];
   if(space>0){
     const partial=groups.filter(g=>!g.isNew).flatMap(g=>g.items);
-    const fresh=groups.filter(g=>g.isNew&&!g.basis).slice(0,NEW_PER_ROUND).flatMap(g=>g.items);
+    const fresh=groups.filter(g=>g.isNew&&!g.basis).slice(0,S.newPerDay).flatMap(g=>g.items);
     items=items.concat(partial.concat(fresh).slice(0,space));
   }
   // zusätzlich bis zu 2 neue Grundwortschatz-Wörter pro Tag, abwechselnd aus den Gruppen
@@ -441,7 +465,7 @@ function stats(){
 function vHome(){
   const due=buildDaily().length, st=streak(), empty=!S.words.length;
   return `
-  <header class="top"><div class="brand"><i>DE</i>DaZ</div></header>
+  <header class="top"><div class="brand"><i>DE</i>DaZ</div><button class="btn ghost" data-act="go" data-v="settings">Settings</button></header>
   ${newsCard()}
   ${storageOk?"":`<div class="warn">This browser does not save your progress. Please open the app from the icon on your home screen.</div>`}
   <section class="card hero">
@@ -677,6 +701,59 @@ function vShow(){
 }
 
 /* ---------- import ---------- */
+function vSettings(){
+  const tabs=[["progress","My progress"],["settings","Settings"]];
+  return `<header class="top"><button class="btn ghost" data-act="go" data-v="home">← Back</button></header>
+  <h1>${ui.stab==="progress"?"My progress":"Settings"}</h1>
+  <nav class="tabs">${tabs.map(([k,n])=>`<button class="tab ${ui.stab===k?"on":""}" data-act="stab" data-t="${k}">${n}</button>`).join("")}</nav>
+  ${ui.stab==="progress"?sProgress():sSettings()}`;
+}
+function sProgress(){
+  const st=stats(), mx=Math.max(1,...st.days.map(d=>d.n));
+  return `
+  <div class="kpis">
+    <div class="kpi"><b>${st.secure}<small style="font-size:16px;color:var(--muted)">/${st.total}</small></b><span>words learned</span></div>
+    <div class="kpi"><b>${st.acc7==null?"–":st.acc7+" %"}</b><span>correct (7 days)</span></div>
+    <div class="kpi"><b>${Math.round(st.time7/60000)} min</b><span>learning time (7 days)</span></div>
+    <div class="kpi"><b>${streak()}</b><span>days in a row</span></div>
+  </div>
+  <section class="card"><h3>Learning days (14 days)</h3>
+    <div class="days">${st.days.map(d=>`<div class="day" title="${d.n} answers"><i style="${d.n?`background:var(--accent);opacity:${0.35+0.65*d.n/mx}`:""}"></i>${WD[new Date(d.d*864e5).getUTCDay()]}</div>`).join("")}</div>
+    <p class="small muted">The darker the square, the more you practised that day.</p>
+  </section>
+  <section class="card"><h3>Words that are still difficult</h3>
+    ${st.probs.length?`<div>${st.probs.map(([id,v])=>{const w=wordById(id);return `<div class="prob"><div style="min-width:0"><b>${esc(w.de)}</b> <span class="muted">${esc(w.en)}</span><div class="small muted">${[...v.m].map(m=>MODE[m].name).join(", ")}</div></div><span class="tnum" style="color:var(--bad);font-weight:700;white-space:nowrap">${v.n}× wrong</span></div>`}).join("")}</div>
+      <button class="btn" data-act="practise-hard">Practise these words</button>`
+      :`<p class="muted">No mistakes yet. Words you often get wrong will appear here.</p>`}
+  </section>
+  <section class="card"><h3>Progress by mode</h3>
+    <p class="small muted">How many words are in each box. The percentage shows your correct answers in the last 30 days.</p>
+    <div class="stack">${st.modes.filter(x=>x.tot).map(x=>{
+      const segs=[1,2,3,4,5].map(b=>x.cnt[b]?`<i style="width:${100*x.cnt[b]/Math.max(1,x.tot)}%;background:var(--b${b})" title="Box ${b}: ${x.cnt[b]}"></i>`:"").join("");
+      return `<div class="mrow"><div class="name">${esc(x.m.name)}<span>${x.locked} locked · ${x.cnt[0]} new</span></div>
+      <div class="bar" style="height:14px">${segs}</div><span class="tnum" style="text-align:right;font-weight:700;white-space:nowrap">${x.acc==null?"–":x.acc+" %"}</span></div>`}).join("")}</div>
+    <div class="legend"><span><i style="background:var(--b0)"></i>new / locked</span>${[1,2,3,4,5].map(b=>`<span><i style="background:var(--b${b})"></i>Box ${b}</span>`).join("")}</div>
+    <p class="small muted">Locked: the harder modes start when a word has reached box 2 in an easy mode.</p>
+  </section>`;
+}
+function sSettings(){
+  const armedR=ui.confirm==="reset", armedB=ui.confirm==="restore";
+  return `<section class="card"><h3>How much do you want to learn?</h3>
+    <label class="f">Exercises per round<select class="in" data-change="perday">${[10,15,20,25,30,40,50].map(n=>`<option ${S.perDay===n?"selected":""}>${n}</option>`).join("")}</select></label>
+    <label class="f">New words per round<select class="in" data-change="newperday">${[3,5,8,10,12,15,20].map(n=>`<option ${S.newPerDay===n?"selected":""}>${n}</option>`).join("")}</select></label>
+    <p class="small muted">Words you need to repeat always come first. New words come in the order of the lessons. More new words means more to repeat on the next days.</p>
+  </section>
+  <section class="card"><h3>Backup</h3>
+    <p class="small muted">Your progress is saved only on this iPad – no account, no name. Copy the backup code now and then, for example into a note. You can use it to get everything back.</p>
+    <button class="btn" data-act="backup">Copy backup code</button>
+    <textarea id="bk-out" class="in" readonly hidden></textarea>
+    <label class="f">Paste backup code<textarea id="bk-in" class="in" style="min-height:80px"></textarea></label>
+    <button class="btn ${armedB?"danger armed":""}" data-act="restore">${armedB?"Replace your current progress?":"Restore"}</button>
+  </section>
+  <section class="card"><h3>Start again</h3><p class="small muted">Deletes all boxes and statistics. The words stay.</p>
+    <button class="btn danger ${armedR?"armed":""}" data-act="reset">${armedR?"Really delete all progress?":"Reset progress"}</button></section>`;
+}
+
 /* ---------- toast & render ---------- */
 let toastT;
 function toast(t){ui.toast=t;clearTimeout(toastT);toastT=setTimeout(()=>{ui.toast=null;render()},2200);render()}
@@ -687,6 +764,7 @@ function render(){
   else if(ui.view==="done")h=vDone();
   else if(ui.view==="practice")h=vPractice();
   else if(ui.view==="phrases")h=vPhrases();
+  else if(ui.view==="settings")h=vSettings();
   document.getElementById("app").innerHTML=`<div class="wrap">${h}</div>`+(ui.show&&ui.view==="phrases"?vShow():"")+(ui.toast?`<div class="toast" role="status">${esc(ui.toast)}</div>`:"");
   if(ui.view==="learn"){
     const s=ui.sess;
@@ -700,6 +778,7 @@ function go(v){ui.view=v;ui.confirm=null;ui.show=null;window.scrollTo(0,0);rende
 document.addEventListener("click",e=>{
   const b=e.target.closest("[data-act]"); if(!b||b.disabled) return;
   const a=b.dataset.act, s=ui.sess;
+  if(!["reset","restore"].includes(a)&&ui.confirm) ui.confirm=null;
     switch(a){
     case "go": go(b.dataset.v); break;
     case "start": startSession(buildDaily(),false); break;
@@ -734,12 +813,38 @@ document.addEventListener("click",e=>{
       }
       render(); break;
     }
+    case "stab": ui.stab=b.dataset.t; render(); break;
+    case "practise-hard": {
+      const ids=stats().probs.map(([id])=>id), items=[];
+      ids.forEach(id=>{const w=wordById(id);const ms=wordModes(w);const m=ms[Math.floor(Math.random()*ms.length)];if(m)items.push({w:id,m:m.id})});
+      startSession(spread(shuffle(items)),true); break;
+    }
+    case "backup": {
+      const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));
+      const out=document.getElementById("bk-out");
+      const fallback=()=>{out.hidden=false;out.value=code;out.focus();out.select();toast("Code selected – copy it now")};
+      try{navigator.clipboard.writeText(code).then(()=>toast("Backup code copied"),fallback)}catch(err){fallback()}
+      break;
+    }
+    case "restore": {
+      if(ui.confirm!=="restore"){ui.confirm="restore";render();break}
+      ui.confirm=null;
+      try{const o=JSON.parse(decodeURIComponent(escape(atob(document.getElementById("bk-in").value.trim()))));if(!o||!Array.isArray(o.words))throw 0;S=fix(o);save();toast("Progress restored")}
+      catch(err){toast("This code is not valid or not complete.")}
+      break;
+    }
+    case "reset": {
+      if(ui.confirm!=="reset"){ui.confirm="reset";render();break}
+      S.prog={};S.log=[];S.sessions=[];ui.confirm=null;save();toast("Progress reset"); break;
+    }
     case "news-ok": ui.news=[]; render(); break;
   }
 });
 document.addEventListener("change",e=>{
   const k=e.target.dataset.change; if(!k) return;
   if(k==="pr-lesson") ui.practice.lesson=e.target.value;
+  if(k==="perday"){S.perDay=+e.target.value;save();toast("Saved")}
+  if(k==="newperday"){S.newPerDay=+e.target.value;save();toast("Saved")}
 });
 document.addEventListener("submit",e=>{
   e.preventDefault();
