@@ -3,7 +3,7 @@
 Web-App für eine Schülerin (Klasse 11), die Deutsch neu lernt und Englisch spricht. Läuft auf dem iPad als Icon auf dem Home-Bildschirm.
 Basiert auf dem Wortkasten (Paula/Emil), angepasst auf Deutsch als Zielsprache.
 
-**Adresse:** https://peldajonas-cell.github.io/DaZ/
+**Adresse:** https://daz-ebg.github.io/DaZ/
 Auf dem iPad in Safari öffnen → Teilen → „Zum Home-Bildschirm“.
 
 ## Was die Schülerin sieht (Oberfläche auf Englisch)
