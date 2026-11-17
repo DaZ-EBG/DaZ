@@ -95,45 +95,13 @@ button,select,input,textarea{font:inherit;color:inherit}
 .fb b.t{font-family:var(--f-display);font-size:20px}
 .fb.ok b.t{color:var(--ok)} .fb.bad b.t{color:var(--bad)}
 .card-flip{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--surface2);display:flex;flex-direction:column;gap:6px}
-/* parent */
 .tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
 .tab{appearance:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer;white-space:nowrap;min-height:40px}
 .tab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-@media (max-width:600px){.kpis{grid-template-columns:1fr 1fr}}
-.kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:2px}
-.kpi b{font-family:var(--f-display);font-size:28px;font-weight:800;font-variant-numeric:tabular-nums}
-.kpi span{font-size:13px;color:var(--muted)}
-.days{display:grid;grid-template-columns:repeat(14,1fr);gap:4px}
-.day{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;color:var(--muted)}
-.day i{display:block;width:100%;aspect-ratio:1;max-width:100%;border-radius:5px;background:var(--line)}
-.mrow{display:grid;grid-template-columns:150px 1fr 54px;gap:10px;align-items:center}
-@media (max-width:460px){.mrow{grid-template-columns:1fr 54px}.mrow .bar{grid-column:1/-1;grid-row:2}}
-.mrow .name{font-weight:700;font-size:15px;min-width:0}
-.mrow .name span{display:block;font-weight:400;font-size:12px;color:var(--muted)}
 .legend{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--muted)}
 .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px}
-.vrow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
-.vrow:first-child{border-top:0}
-.vw b{display:block;overflow-wrap:anywhere} .vw span{color:var(--muted);font-size:15px;overflow-wrap:anywhere}
-.dots{display:flex;gap:3px}
-.dot{width:12px;height:12px;border-radius:3px;background:var(--b0)}
-.dot.na{background:transparent;border:1px dashed var(--line)}
-@media (max-width:460px){.vrow{grid-template-columns:minmax(0,1fr) auto}.vrow .dots{grid-column:1/-1;grid-row:2}}
-.tag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--hl);color:var(--hl-ink)}
 label.f{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:700;color:var(--muted)}
 .in{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface2);font-size:17px;color:var(--ink)}
-textarea.in{min-height:140px;resize:vertical;font-size:15px}
-.prob{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line)}
-.prob:first-child{border-top:0}
-/* lock */
-.pin{display:flex;gap:14px;justify-content:center;margin:8px 0}
-.pin i{width:16px;height:16px;border-radius:50%;border:2px solid var(--ink)}
-.pin i.on{background:var(--ink)}
-.pad{display:grid;grid-template-columns:repeat(3,72px);gap:12px;justify-content:center}
-.pad button{height:64px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:24px;font-weight:700;cursor:pointer}
-.shake{animation:sh .35s}
-@keyframes sh{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;font-weight:700;z-index:20;max-width:calc(100% - 32px)}
 .warn{background:var(--bad-soft);color:var(--bad);border-radius:12px;padding:10px 14px;font-size:14px}
 details summary{cursor:pointer;font-weight:700}
@@ -207,19 +175,18 @@ function lev(a,b){const m=a.length,n=b.length;const d=Array.from({length:m+1},(_
 
 /* ---------- storage ---------- */
 function seed(){
-  return {v:1,pin:null,perDay:25,newPerDay:8,phrases:[],lessons:[{id:"own",name:"My words"}],words:[],prog:{},log:[],sessions:[],removed:[]};
+  return {v:1,phrases:[],lessons:[{id:"own",name:"My words"}],words:[],prog:{},log:[],sessions:[],removed:[]};
 }
 let storageOk=true;
 function load(){
   try{const s=localStorage.getItem(KEY);if(s){const o=JSON.parse(s);if(o&&Array.isArray(o.words))return fix(o)}}catch(e){storageOk=false}
   return seed();
 }
-function fix(o){o.lessons=o.lessons||[];if(!o.lessons.some(l=>l.id==="own"))o.lessons.push({id:"own",name:"My words"});o.prog=o.prog||{};o.log=o.log||[];o.sessions=o.sessions||[];o.removed=o.removed||[];o.perDay=o.perDay||25;o.newPerDay=o.newPerDay||8;o.phrases=o.phrases||[];return o}
+function fix(o){o.lessons=o.lessons||[];if(!o.lessons.some(l=>l.id==="own"))o.lessons.push({id:"own",name:"My words"});o.prog=o.prog||{};o.log=o.log||[];o.sessions=o.sessions||[];o.removed=o.removed||[];o.phrases=o.phrases||[];return o}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){storageOk=false}}
 
 let S = load();
-let ui = {view:"home",ptab:"ueberblick",pin:"",pinFirst:null,pinMode:"enter",pinErr:false,
-  lessonFilter:"all",editId:null,confirm:null,sess:null,toast:null,practice:{lesson:"all",mode:"mix"},photos:[],photoSent:false,photoErr:false,importLesson:null,importText:"",importName:"",preview:null,news:[],phraseCat:0,show:null};
+let ui = {view:"home",confirm:null,sess:null,toast:null,practice:{lesson:"all",mode:"mix"},news:[],phraseCat:0,show:null};
 
 /* ---------- model ---------- */
 const wordById = id=>S.words.find(w=>w.id===id);
@@ -251,7 +218,8 @@ const secure = w=>{const ms=wordModes(w);return ms.length>0&&ms.every(m=>P(w.id,
 const started = w=>MODES.some(m=>P(w.id,m.id).box>0);
 /* Grundwortschatz: Lektionen "Basis – …" (IDs beginnen mit basis-) laufen nebenbei mit */
 const BASIS_NEW = 0;
-const isBasis = ()=>false; /* DaZ: kein separater Grundwortschatz, alles läuft über newPerDay */
+const PER_DAY = 25, NEW_PER_ROUND = 8; /* fest eingestellt, kein Einstellungsbereich */
+const isBasis = ()=>false; /* DaZ: kein separater Grundwortschatz */
 const basisLabel = name=>String(name).replace(/^Basis\s*[–-]\s*/,"");
 function basisStartedToday(){
   const first={}; for(const e of S.log){if(!(e.w in first))first[e.w]=dayNum(e.t)}
@@ -295,12 +263,12 @@ function buildDaily(){
     }
   }
   rev.sort((a,b)=>a.due-b.due||a.box-b.box);
-  let items=rev.slice(0,S.perDay);
-  const space=S.perDay-items.length;
+  let items=rev.slice(0,PER_DAY);
+  const space=PER_DAY-items.length;
   const groups=[...neu.values()];
   if(space>0){
     const partial=groups.filter(g=>!g.isNew).flatMap(g=>g.items);
-    const fresh=groups.filter(g=>g.isNew&&!g.basis).slice(0,S.newPerDay||8).flatMap(g=>g.items);
+    const fresh=groups.filter(g=>g.isNew&&!g.basis).slice(0,NEW_PER_ROUND).flatMap(g=>g.items);
     items=items.concat(partial.concat(fresh).slice(0,space));
   }
   // zusätzlich bis zu 2 neue Grundwortschatz-Wörter pro Tag, abwechselnd aus den Gruppen
@@ -473,7 +441,7 @@ function stats(){
 function vHome(){
   const due=buildDaily().length, st=streak(), empty=!S.words.length;
   return `
-  <header class="top"><div class="brand"><i>DE</i>DaZ</div><button class="btn ghost" data-act="go-lock">Teacher</button></header>
+  <header class="top"><div class="brand"><i>DE</i>DaZ</div></header>
   ${newsCard()}
   ${storageOk?"":`<div class="warn">This browser does not save your progress. Please open the app from the icon on your home screen.</div>`}
   <section class="card hero">
@@ -485,8 +453,6 @@ function vHome(){
   <div class="grid2">
     <button class="btn tile-btn" data-act="go" data-v="phrases">Phrases<span>Say it in German – tap to hear it</span></button>
     <button class="btn tile-btn" data-act="go" data-v="practice">Practise<span>Choose a lesson and a mode</span></button>
-    <button class="btn tile-btn" data-act="go" data-v="own">My words<span>Add your own words</span></button>
-    <button class="btn tile-btn" data-act="go" data-v="fotos">Take photos<span>${ui.photos.length?`${ui.photos.length} ${ui.photos.length===1?"photo":"photos"} ready to send`:"Send worksheets to your teacher"}</span></button>
   </div>
   ${lessonCards()}`;
 }
@@ -507,22 +473,6 @@ function lessonCards(){
     <div class="row" style="justify-content:space-between"><h2>${esc(x.g)}</h2><span class="muted small tnum">${x.all.filter(secure).length} / ${x.all.length} learned</span></div>
     ${x.rows.join("")}${LEGEND}</section>`).join("");
 }
-function basisCard(parent){
-  const ls=S.lessons.filter(l=>isBasis(l.id)).map(l=>({l,ws:S.words.filter(w=>w.lesson===l.id)})).filter(x=>x.ws.length);
-  if(!ls.length) return "";
-  const all=ls.flatMap(x=>x.ws), sec=all.filter(secure).length, open=all.filter(w=>!started(w)).length;
-  const parts=[];
-  ls.forEach(({l,ws})=>{const lab=basisLabel(l.name), m=lab.match(/^([^:]+):\s*(.+)$/);
-    const sec=m?m[1].trim():"", name=m?m[2]:lab;
-    let p=parts.find(x=>x.sec===sec); if(!p){p={sec,rows:[]};parts.push(p)} p.rows.push(lessonRow(name,ws))});
-  return `<section class="card">
-    <div class="row" style="justify-content:space-between"><h${parent?3:2}>Grundwortschatz</h${parent?3:2}><span class="muted small tnum">${sec} von ${all.length} sicher</span></div>
-    <p class="small muted">${parent?`Wichtige Wörter zum Lesen und Schreiben. Pro Tag kommen bis zu ${BASIS_NEW} neue dazu, zusätzlich zu den Buch-Lektionen. Noch nicht angefangen: ${open}.`:`Die wichtigsten Wörter zum Lesen und Schreiben. Jeden Tag kommen ${BASIS_NEW} neue in deine Runde.`}</p>
-    ${parts.map(p=>`${p.sec?`<div class="eyebrow">${esc(p.sec)}</div>`:""}${p.rows.join("")}`).join("")}
-    ${LEGEND}
-  </section>`;
-}
-
 const flame = n=>`<span class="flame" aria-label="${n} Tage Lernserie"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c.6 3.2-1.2 5-2.9 6.9C7.4 10.8 6 12.7 6 15.3 6 18.9 8.7 22 12 22s6-2.8 6-6.5c0-2.4-1.1-4.2-2.3-5.6-.2 1.5-.9 2.7-2 3.3.4-3.6-.6-7.6-1.7-11.2z"/></svg>${n}</span>`;
 function newsCard(){
   if(!ui.news.length) return "";
@@ -563,7 +513,7 @@ async function syncLessons(){
   }
   if(changed) save();
   if(news.length) ui.news=ui.news.concat(news);
-  if((changed||news.length)&&!["learn","lock"].includes(ui.view)&&!ui.editId&&!ui.preview) render();
+  if((changed||news.length)&&!ui.view!=="learn") render();
 }
 
 function vLearn(){
@@ -726,225 +676,7 @@ function vShow(){
     <div class="row" style="justify-content:center"><button class="btn primary" data-act="say" data-t="${esc(x.de)}">${SPEAK} Listen</button><button class="btn" data-act="ph-close">Close</button></div></div>`;
 }
 
-function vOwn(){
-  const own=S.words.filter(w=>w.src==="kind");
-  return `<header class="top"><button class="btn ghost" data-act="go" data-v="home">← Back</button></header>
-  <h1>My words</h1>
-  <section class="card">
-    <form data-form="own" class="stack">
-      <div class="grid2"><label class="f">German<input id="ow-de" class="in" autocorrect="off" spellcheck="false" placeholder="der Tisch" required></label>
-      <label class="f">English<input id="ow-en" class="in" placeholder="table" required></label></div>
-      <p class="small muted">Write nouns with der, die or das.</p>
-      <label class="f">Example sentence in German (optional)<input id="ow-sde" class="in" autocapitalize="sentences"></label>
-      <label class="f">Example sentence in English (optional)<input id="ow-sen" class="in"></label>
-      <button class="btn primary" type="submit">Add word</button>
-    </form>
-    <details><summary>Paste a whole list</summary>
-      <div class="stack" style="margin-top:10px"><p class="small muted">One word per line: German ; English ; German sentence ; English sentence. The sentences are optional.</p>
-      <textarea id="ow-list" class="in" placeholder="der Tisch ; table&#10;lernen ; to learn ; Ich lerne Deutsch. ; I am learning German."></textarea>
-      <button class="btn" data-act="own-list">Add list</button></div>
-    </details>
-  </section>
-  <section class="card"><h2>Added by you</h2>
-    ${own.length?`<div>${own.map(w=>`<div class="vrow"><div class="vw"><b>${esc(w.de)}</b><span>${esc(w.en)}</span></div><span></span>
-      <button class="btn danger ${ui.confirm==="ow:"+w.id?"armed":""}" data-act="del-own" data-id="${w.id}">${ui.confirm==="ow:"+w.id?"Sure?":"Delete"}</button></div>`).join("")}</div>`
-      :`<p class="muted">Nothing here yet. Words you add here come into your daily rounds automatically.</p>`}
-  </section>`;
-}
-
-function vFotos(){
-  const ph=ui.photos, n=ph.length;
-  return `<header class="top"><button class="btn ghost" data-act="go" data-v="home">← Back</button></header>
-  <h1>Take photos</h1>
-  <p class="muted">Take photos of worksheets, the board or word lists from your lessons and send them to your teacher. The new words will then appear in the app automatically.</p>
-  ${ui.photoSent?`<div class="fb ok"><b class="t">Photos sent</b><span>When the new lesson is ready, you will see it on the start page.</span></div>`:""}
-  <section class="card">
-    <div class="grid2">
-      <label class="btn primary" for="ph-cam">Take a photo</label>
-      <label class="btn" for="ph-lib">Choose from Photos</label>
-    </div>
-    <input id="ph-cam" class="vh" type="file" accept="image/*" capture="environment" data-change="photos" tabindex="-1">
-    <input id="ph-lib" class="vh" type="file" accept="image/*" multiple data-change="photos" tabindex="-1">
-    <p class="small muted">Tip: Hold the iPad straight above the page and use good light. Screenshots work too – find them under “Choose from Photos”.</p>
-    ${n?`<div class="thumbs">${ph.map((x,i)=>`<figure class="thumb"><img src="${x.url}" alt="Photo ${i+1}"><button class="icon" data-act="ph-del" data-i="${i}" aria-label="Remove photo ${i+1}"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></figure>`).join("")}</div>`:""}
-  </section>
-  ${ui.photoErr?`<div class="warn">Sending directly does not work here. Open the app from the icon on your home screen, or send the photos from the Photos app.</div>`:""}
-  <button class="btn primary wide" data-act="ph-send" ${n?"":"disabled"}>${n?`Send to my teacher (${n} ${n===1?"photo":"photos"})`:"Add photos first"}</button>
-  ${n?`<p class="small muted">In the share menu, choose your teacher in Messages, Mail or AirDrop.</p>`:""}`;
-}
-async function sendPhotos(){
-  const files=ui.photos.map(x=>x.file);
-  try{
-    if(!navigator.canShare||!navigator.canShare({files})) throw {name:"NotSupported"};
-    await navigator.share({files,title:"DaZ photos"});
-    ui.photos.forEach(x=>{try{URL.revokeObjectURL(x.url)}catch(e){}});
-    ui.photos=[]; ui.photoSent=true; ui.photoErr=false;
-  }catch(e){
-    if(e&&e.name==="AbortError") return;
-    ui.photoErr=true;
-  }
-  if(ui.view==="fotos") render();
-}
-
-function vLock(){
-  const setting=ui.pinMode!=="enter";
-  const title=ui.pinMode==="enter"?"PIN eingeben":ui.pinFirst?"PIN noch einmal eingeben":"Neue PIN festlegen";
-  return `<header class="top"><button class="btn ghost" data-act="pin-cancel">← Back</button></header>
-  <section class="card" style="align-items:center;text-align:center">
-    <div class="eyebrow">Lehrkraft-Bereich</div><h1>${title}</h1>
-    ${setting&&!ui.pinFirst?`<p class="muted small">4 Ziffern. Die PIN ist eine einfache Sperre auf diesem Gerät.</p>`:""}
-    <div class="pin ${ui.pinErr?"shake":""}">${[0,1,2,3].map(i=>`<i class="${i<ui.pin.length?"on":""}"></i>`).join("")}</div>
-    ${ui.pinErr?`<p style="color:var(--bad)">${ui.pinMode==="enter"?"Falsche PIN.":"Die PINs stimmen nicht überein."}</p>`:""}
-    <div class="pad">${[1,2,3,4,5,6,7,8,9].map(d=>`<button data-act="pin" data-d="${d}">${d}</button>`).join("")}<span></span><button data-act="pin" data-d="0">0</button><button data-act="pin-del" aria-label="Löschen">⌫</button></div>
-  </section>`;
-}
-
-function vParent(){
-  const tabs=[["ueberblick","Überblick"],["vokabeln","Vokabeln"],["neu","Hinzufügen"],["einst","Einstellungen"]];
-  let body="";
-  if(ui.ptab==="ueberblick") body=pOverview();
-  if(ui.ptab==="vokabeln") body=pWords();
-  if(ui.ptab==="neu") body=pAdd();
-  if(ui.ptab==="einst") body=pSettings();
-  return `<header class="top"><div class="brand" style="font-size:20px"><i>DE</i>Lehrkraft-Bereich</div><button class="btn ghost" data-act="parent-exit">Sperren</button></header>
-  <nav class="tabs">${tabs.map(([k,n])=>`<button class="tab ${ui.ptab===k?"on":""}" data-act="ptab" data-t="${k}">${n}</button>`).join("")}</nav>
-  ${body}`;
-}
-function pOverview(){
-  const st=stats(), mx=Math.max(1,...st.days.map(d=>d.n));
-  const kids=S.words.filter(w=>w.src==="kind");
-  return `
-  <div class="kpis">
-    <div class="kpi"><b>${st.secure}<small style="font-size:16px;color:var(--muted)">/${st.total}</small></b><span>Wörter sicher</span></div>
-    <div class="kpi"><b>${st.acc7==null?"–":st.acc7+" %"}</b><span>Trefferquote 7 Tage</span></div>
-    <div class="kpi"><b>${Math.round(st.time7/60000)} min</b><span>Lernzeit 7 Tage</span></div>
-    <div class="kpi"><b>${streak()}</b><span>Tage in Folge</span></div>
-  </div>
-  ${basisCard(true)}
-  <section class="card"><h3>Lerntage (14 Tage)</h3>
-    <div class="days">${st.days.map(d=>`<div class="day" title="${d.n} Antworten"><i style="${d.n?`background:var(--accent);opacity:${0.35+0.65*d.n/mx}`:""}"></i>${WD[new Date(d.d*864e5).getUTCDay()]}</div>`).join("")}</div>
-    <p class="small muted">Je kräftiger, desto mehr Antworten an dem Tag.</p>
-  </section>
-  <section class="card"><h3>Stand pro Lernmodus</h3>
-    <p class="small muted">Anzahl Wörter je Fach. Die Prozentzahl ist die Trefferquote der letzten 30 Tage.</p>
-    <div class="stack">${st.modes.map(x=>{
-      const segs=[1,2,3,4,5].map(b=>x.cnt[b]?`<i style="width:${100*x.cnt[b]/Math.max(1,x.tot)}%;background:var(--b${b})" title="Fach ${b}: ${x.cnt[b]}"></i>`:"").join("");
-      return `<div class="mrow"><div class="name">${esc(x.m.name)}<span>${x.tot?`${x.locked} gesperrt · ${x.cnt[0]} neu`:"keine passenden Wörter"}</span></div>
-      <div class="bar" style="height:14px">${segs}</div><span class="tnum" style="text-align:right;font-weight:700">${x.acc==null?"–":x.acc+" %"}</span></div>`}).join("")}</div>
-    <div class="legend"><span><i style="background:var(--b0)"></i>neu/gesperrt</span>${[1,2,3,4,5].map(b=>`<span><i style="background:var(--b${b})"></i>Fach ${b}</span>`).join("")}</div>
-    <p class="small muted">Gesperrt heißt: Schreib-, Satz- und Formenmodi starten erst, wenn ein Wort in einem leichten Modus Fach 2 erreicht hat. Die Modusnamen sind englisch, weil die Schülerin sie so sieht.</p>
-  </section>
-  <section class="card"><h3>Problemwörter (30 Tage)</h3>
-    ${st.probs.length?`<div>${st.probs.map(([id,v])=>{const w=wordById(id);return `<div class="prob"><div style="min-width:0"><b>${esc(w.de)}</b> <span class="muted">${esc(w.en)}</span><div class="small muted">${[...v.m].map(m=>MODE[m].name).join(", ")}</div></div><span class="tnum" style="color:var(--bad);font-weight:700;white-space:nowrap">${v.n}× falsch</span></div>`}).join("")}</div>`
-      :`<p class="muted">Noch keine Fehler gesammelt. Hier erscheinen Wörter, die oft falsch beantwortet werden.</p>`}
-  </section>
-  <section class="card"><h3>Von der Schülerin ergänzt</h3>
-    ${kids.length?`<div>${kids.map(w=>`<div class="prob"><span><b>${esc(w.de)}</b> <span class="muted">${esc(w.en)}</span></span><span class="small muted">${new Date(w.created).toLocaleDateString("de-DE")}</span></div>`).join("")}</div>`:`<p class="muted">Bisher keine eigenen Wörter.</p>`}
-  </section>`;
-}
-function pWords(){
-  const f=ui.lessonFilter;
-  const ws=S.words.filter(w=>f==="all"||w.lesson===f);
-  const ed=ui.editId&&wordById(ui.editId);
-  return `
-  ${ed?editForm(ed):""}
-  <section class="card">
-    <div class="row" style="justify-content:space-between"><h3>${ws.length} Vokabeln</h3>
-    <select class="in" style="width:auto" data-change="lesson-filter"><option value="all">Alle Lektionen</option>${S.lessons.map(l=>`<option value="${l.id}" ${f===l.id?"selected":""}>${esc(l.name)}</option>`).join("")}</select></div>
-    <div class="legend">${MODES.map((m,i)=>`<span>${i+1} ${esc(m.name)}</span>`).join("")}</div>
-    <div>${ws.map(w=>`<div class="vrow"><div class="vw"><b>${esc(w.de)} ${w.src==="kind"?`<span class="tag">SuS</span>`:""}</b><span>${esc(w.en)}</span></div>
-      <div class="dots">${MODES.map(m=>available(w,m.id)?`<i class="dot" style="background:var(--b${unlocked(w,m.id)?P(w.id,m.id).box:0})" title="${esc(m.name)}: ${unlocked(w,m.id)?(P(w.id,m.id).box?"Fach "+P(w.id,m.id).box:"neu"):"gesperrt"}"></i>`:`<i class="dot na" title="${esc(m.name)}: nicht möglich (Satz fehlt)"></i>`).join("")}</div>
-      <button class="btn ghost" data-act="edit" data-id="${w.id}">Bearbeiten</button></div>`).join("")||`<p class="muted">Keine Vokabeln in dieser Lektion.</p>`}</div>
-  </section>`;
-}
-function editForm(w){
-  const armed=ui.confirm==="w:"+w.id;
-  return `<section class="card"><h3>Vokabel bearbeiten</h3>
-    <div class="grid2"><label class="f">Deutsch<input id="ed-de" class="in" value="${esc(w.de)}"></label><label class="f">Englisch<input id="ed-en" class="in" value="${esc(w.en)}"></label></div>
-    <label class="f">Satz Deutsch<input id="ed-sde" class="in" value="${esc(w.sDe)}"></label>
-    <label class="f">Satz Englisch<input id="ed-sen" class="in" value="${esc(w.sEn)}"></label>
-    <label class="f">Formen (Nomen: Plural · starke Verben: drei Formen)<input id="ed-forms" class="in" autocapitalize="off" autocorrect="off" value="${esc((w.forms||[]).join(" - "))}" placeholder="die Tische  oder  gehen - ging - ist gegangen"></label>
-    <label class="f">Lektion<select id="ed-lesson" class="in">${S.lessons.map(l=>`<option value="${l.id}" ${w.lesson===l.id?"selected":""}>${esc(l.name)}</option>`).join("")}</select></label>
-    <p class="small muted">Nomen immer mit Artikel („der Tisch“). Mehrere richtige Antworten mit „/“ trennen. Verbformen mit „ - “ (Leerzeichen davor und danach) trennen.</p>
-    <div class="row"><button class="btn primary" data-act="ed-save">Speichern</button><button class="btn" data-act="ed-cancel">Abbrechen</button>
-    <button class="btn danger ${armed?"armed":""}" data-act="ed-del" style="margin-left:auto">${armed?"Wirklich löschen?":"Löschen"}</button></div>
-  </section>`;
-}
-function targetLabel(sel){return sel==="__new"?(ui.importName.trim()||"Neue Lektion"):lessonName(sel)}
-function pAdd(){
-  const sel=ui.importLesson||(S.lessons.find(l=>l.id!=="own")||{id:"__new"}).id;
-  ui.importLesson=sel;
-  const pv=ui.preview;
-  if(pv){
-    let k=0;
-    return `<section class="card"><h3>Vorschau</h3>
-      <p class="small muted">Nimm das Häkchen weg bei Wörtern, die nicht übernommen werden sollen.</p>
-      ${pv.blocks.map(b=>`<div class="stack" style="gap:0"><div class="eyebrow" style="padding:8px 0 4px">${esc(b.name||targetLabel(sel))}${b.isNew?" · neue Lektion":""}</div>
-        ${b.items.map(x=>{const i=k++;return `<label class="pv" for="pv-${i}"><input type="checkbox" id="pv-${i}" ${x.dup?"":"checked"}>
-          <span class="vw"><b>${esc(x.de)}</b><span>${esc(x.en)}</span>${x.sDe?`<span class="small">${esc(x.sDe)}</span>`:""}${x.dup?`<span class="small">Schon vorhanden</span>`:""}</span></label>`}).join("")}</div>`).join("")}
-      <div class="row"><button class="btn" data-act="preview-cancel">Zurück</button><button class="btn primary" style="flex:1" data-act="import">Übernehmen</button></div>
-    </section>`;
-  }
-  return `<section class="card"><h3>Vokabeln hinzufügen</h3>
-    <p class="small muted">Lektionen kommen automatisch über die Website. Hier kannst du zusätzlich eine Liste oder einen Lektions-Text von Claude einfügen.</p>
-    <label class="f">Lektion (für Zeilen ohne eigene Überschrift)<select id="im-lesson" class="in" data-change="im-lesson">${S.lessons.map(l=>`<option value="${l.id}" ${sel===l.id?"selected":""}>${esc(l.name)}</option>`).join("")}<option value="__new" ${sel==="__new"?"selected":""}>+ Neue Lektion…</option></select></label>
-    ${sel==="__new"?`<label class="f">Name der neuen Lektion<input id="im-name" class="in" data-input="im-name" value="${esc(ui.importName)}" placeholder="z. B. Biologie: Die Zelle"></label>`:""}
-    <label class="f">Liste<textarea id="im-text" class="in" data-input="im-text" placeholder="# Lektion: Biologie: Die Zelle&#10;die Zelle ; cell ; Die Zelle ist sehr klein. ; The cell is very small. ; die Zellen&#10;teilen ; to divide">${esc(ui.importText)}</textarea></label>
-    <p class="small muted">Pro Zeile eine Vokabel: <b>Deutsch ; Englisch ; Satz Deutsch ; Satz Englisch ; Formen</b>. Nomen mit Artikel. Die Sätze sind freiwillig, schalten aber die Satzmodi frei. Formen: bei Nomen der Plural (<b>die Zellen</b>), bei starken Verben <b>gehen - ging - ist gegangen</b>. Eine Zeile <b># Lektion: Fach: Thema</b> startet eine eigene Lektion.</p>
-    <div class="row"><span id="im-count" class="muted small">${countLabel()}</span><button class="btn primary" style="margin-left:auto" data-act="preview">Vorschau</button></div>
-  </section>
-  <section class="card"><h3>Lektionen</h3>
-    <div>${S.lessons.map(l=>{const n=S.words.filter(w=>w.lesson===l.id).length;const armed=ui.confirm==="l:"+l.id;
-      return `<div class="vrow"><div class="vw"><b>${esc(l.name)}</b><span class="tnum">${n} Vokabeln${l.src==="buch"?" · von der Website":""}</span></div><span></span>
-      ${l.id==="own"?`<span class="small muted">fest</span>`:`<button class="btn danger ${armed?"armed":""}" data-act="del-lesson" data-id="${l.id}">${armed?"Mit allen Wörtern löschen?":"Löschen"}</button>`}</div>`}).join("")}</div>
-  </section>`;
-}
-function countLabel(){
-  const bl=parseBlocks(ui.importText), n=bl.reduce((a,b)=>a+b.items.length,0), named=bl.filter(b=>b.name).length;
-  return `${n} ${n===1?"Vokabel":"Vokabeln"} erkannt${named?` in ${named} ${named===1?"Lektion":"Lektionen"}`:""}`;
-}
-function pSettings(){
-  const armedR=ui.confirm==="reset", armedB=ui.confirm==="restore";
-  return `<section class="card"><h3>Lernrunde</h3>
-    <label class="f">Übungen pro Tag<select class="in" data-change="perday">${[15,20,25,30,40,50].map(n=>`<option ${S.perDay===n?"selected":""}>${n}</option>`).join("")}</select></label>
-    <label class="f">Neue Wörter pro Runde<select class="in" data-change="newperday">${[3,5,8,10,12,15].map(n=>`<option ${S.newPerDay===n?"selected":""}>${n}</option>`).join("")}</select></label>
-    <p class="small muted">Neue Wörter kommen in der Reihenfolge der Lektionen. Wiederholungen haben immer Vorrang.</p>
-  </section>
-  <section class="card"><h3>PIN</h3><button class="btn" data-act="pin-change">PIN ändern</button></section>
-  <section class="card"><h3>Sicherung</h3>
-    <p class="small muted">Alles liegt nur auf diesem iPad, ohne Konto und ohne Namen. Kopiere ab und zu den Sicherungscode, z. B. in eine Notiz. Damit lässt sich alles wiederherstellen.</p>
-    <button class="btn" data-act="backup">Sicherungscode kopieren</button>
-    <textarea id="bk-out" class="in" readonly hidden></textarea>
-    <label class="f">Sicherungscode einfügen<textarea id="bk-in" class="in" style="min-height:80px"></textarea></label>
-    <button class="btn ${armedB?"danger armed":""}" data-act="restore">${armedB?"Aktuellen Stand ersetzen?":"Wiederherstellen"}</button>
-  </section>
-  <section class="card"><h3>Lernstand zurücksetzen</h3><p class="small muted">Löscht alle Fächer und die Statistik. Die Vokabeln bleiben.</p>
-    <button class="btn danger ${armedR?"armed":""}" data-act="reset">${armedR?"Wirklich alles zurücksetzen?":"Zurücksetzen"}</button></section>`;
-}
-
 /* ---------- import ---------- */
-function parseBlocks(txt){
-  const blocks=[]; let cur={name:null,items:[]};
-  String(txt||"").split(/\r?\n/).forEach(raw=>{
-    const l=raw.trim(); if(!l) return;
-    const h=l.match(/^#+\s*(?:Lektion\s*:)?\s*(.+)$/i);
-    if(h){blocks.push(cur);cur={name:h[1].trim(),items:[]};return}
-    const p=(l.includes("\t")?l.split("\t"):l.split(";")).map(x=>x.trim());
-    if(p[0]&&p[1]){const it={de:p[0],en:p[1],sDe:p[2]||"",sEn:p[3]||""};const fm=splitForms(p[4]);if(fm.length===1||fm.length>=3)it.forms=fm.slice(0,3);cur.items.push(it)}
-  });
-  blocks.push(cur);
-  return blocks.filter(b=>b.items.length);
-}
-const parseList = txt=>parseBlocks(txt).flatMap(b=>b.items);
-function addWords(list,lesson,src){
-  let n=0;
-  list.forEach(x=>{
-    if(S.words.some(w=>w.lesson===lesson&&norm(w.de)===norm(x.de)&&norm(w.en)===norm(x.en)))return;
-    S.words.push(Object.assign({id:uid(),lesson,src,created:Date.now()},x));n++;
-  });
-  save(); return n;
-}
-
 /* ---------- toast & render ---------- */
 let toastT;
 function toast(t){ui.toast=t;clearTimeout(toastT);toastT=setTimeout(()=>{ui.toast=null;render()},2200);render()}
@@ -954,10 +686,6 @@ function render(){
   else if(ui.view==="learn")h=vLearn();
   else if(ui.view==="done")h=vDone();
   else if(ui.view==="practice")h=vPractice();
-  else if(ui.view==="own")h=vOwn();
-  else if(ui.view==="fotos")h=vFotos();
-  else if(ui.view==="lock")h=vLock();
-  else if(ui.view==="parent")h=vParent();
   else if(ui.view==="phrases")h=vPhrases();
   document.getElementById("app").innerHTML=`<div class="wrap">${h}</div>`+(ui.show&&ui.view==="phrases"?vShow():"")+(ui.toast?`<div class="toast" role="status">${esc(ui.toast)}</div>`:"");
   if(ui.view==="learn"){
@@ -972,9 +700,7 @@ function go(v){ui.view=v;ui.confirm=null;ui.show=null;window.scrollTo(0,0);rende
 document.addEventListener("click",e=>{
   const b=e.target.closest("[data-act]"); if(!b||b.disabled) return;
   const a=b.dataset.act, s=ui.sess;
-  const keepConfirm=["del-own","ed-del","del-lesson","reset","restore"].includes(a);
-  if(!keepConfirm&&ui.confirm){ui.confirm=null}
-  switch(a){
+    switch(a){
     case "go": go(b.dataset.v); break;
     case "start": startSession(buildDaily(),false); break;
     case "start-practice": startSession(buildPractice(),true); break;
@@ -1008,145 +734,22 @@ document.addEventListener("click",e=>{
       }
       render(); break;
     }
-    case "own-list": {
-      const el=document.getElementById("ow-list"); const n=addWords(parseList(el.value),"own","kind");
-      toast(n?`${n} words added`:"No new words found. Format: German ; English"); break;
-    }
-    case "del-own": {
-      const id=b.dataset.id;
-      if(ui.confirm==="ow:"+id){S.words=S.words.filter(w=>w.id!==id);delete S.prog[id];ui.confirm=null;save();toast("Deleted")}
-      else{ui.confirm="ow:"+id;render()} break;
-    }
-    case "go-lock": ui.pin="";ui.pinFirst=null;ui.pinErr=false;ui.pinMode=S.pin?"enter":"set";go("lock"); break;
-    case "pin": pinDigit(b.dataset.d); break;
-    case "pin-del": ui.pin=ui.pin.slice(0,-1); ui.pinErr=false; render(); break;
-    case "pin-cancel": go(ui.pinMode==="change"?"parent":"home"); break;
-    case "pin-change": ui.pin="";ui.pinFirst=null;ui.pinErr=false;ui.pinMode="change";go("lock"); break;
-    case "parent-exit": go("home"); break;
-    case "ptab": ui.ptab=b.dataset.t; ui.editId=null; render(); break;
-    case "edit": ui.editId=b.dataset.id; render(); window.scrollTo(0,0); break;
-    case "ed-cancel": ui.editId=null; render(); break;
-    case "ed-save": {
-      const w=wordById(ui.editId); const v=id=>document.getElementById(id).value.trim();
-      if(!v("ed-en")||!v("ed-de")){toast("Deutsch und Englisch dürfen nicht leer sein.");break}
-      Object.assign(w,{de:v("ed-de"),en:v("ed-en"),sDe:v("ed-sde"),sEn:v("ed-sen"),lesson:document.getElementById("ed-lesson").value,edited:true});
-      {const fm=splitForms(v("ed-forms"));if(fm.length===1||fm.length>=3)w.forms=fm.slice(0,3);else delete w.forms}
-      ui.editId=null; save(); toast("Gespeichert"); break;
-    }
-    case "ed-del": {
-      const id=ui.editId;
-      if(ui.confirm==="w:"+id){if(!S.removed.includes(id))S.removed.push(id);S.words=S.words.filter(w=>w.id!==id);delete S.prog[id];ui.editId=null;ui.confirm=null;save();toast("Vokabel gelöscht")}
-      else{ui.confirm="w:"+id;render()} break;
-    }
-    case "preview": {
-      const blocks=parseBlocks(ui.importText);
-      if(!blocks.length){toast("Keine Vokabeln erkannt. Format: Deutsch ; Englisch");break}
-      const sel=ui.importLesson;
-      if(sel==="__new"&&blocks.some(x=>!x.name)&&!ui.importName.trim()){toast("Bitte einen Namen für die neue Lektion eingeben.");break}
-      blocks.forEach(x=>{
-        const les=x.name?S.lessons.find(l=>norm(l.name)===norm(x.name)):(sel==="__new"?null:S.lessons.find(l=>l.id===sel));
-        x.isNew=!les;
-        x.items.forEach(it=>{it.dup=!!les&&S.words.some(w=>w.lesson===les.id&&norm(w.de)===norm(it.de)&&norm(w.en)===norm(it.en))});
-      });
-      ui.preview={blocks}; render(); window.scrollTo(0,0); break;
-    }
-    case "preview-cancel": ui.preview=null; render(); break;
-    case "import": {
-      const pv=ui.preview; if(!pv) break;
-      let k=0,n=0,last=null;
-      pv.blocks.forEach(x=>{
-        const chosen=x.items.filter(()=>{const c=document.getElementById("pv-"+(k++));return c&&c.checked});
-        if(!chosen.length) return;
-        let lid;
-        if(x.name){const les=S.lessons.find(l=>norm(l.name)===norm(x.name));lid=les?les.id:null;
-          if(!lid){lid="l_"+uid();const oi=S.lessons.findIndex(l=>l.id==="own");S.lessons.splice(oi<0?S.lessons.length:oi,0,{id:lid,name:x.name})}}
-        else if(ui.importLesson==="__new"){lid="l_"+uid();S.lessons.splice(Math.max(0,S.lessons.findIndex(l=>l.id==="own")),0,{id:lid,name:ui.importName.trim()});ui.importLesson=lid}
-        else lid=ui.importLesson;
-        n+=addWords(chosen,lid,"eltern"); last=lid;
-      });
-      ui.preview=null; ui.importText=""; ui.importName="";
-      if(last&&ui.importLesson==="__new") ui.importLesson=last;
-      toast(n?`${n} Vokabeln übernommen`:"Nichts übernommen"); break;
-    }
     case "news-ok": ui.news=[]; render(); break;
-    case "ph-send": ui.photoErr=false; sendPhotos(); break;
-    case "ph-del": { const x=ui.photos.splice(+b.dataset.i,1)[0]; if(x)try{URL.revokeObjectURL(x.url)}catch(err){} render(); break; }
-    case "del-lesson": {
-      const id=b.dataset.id;
-      if(ui.confirm==="l:"+id){if(!S.removed.includes(id))S.removed.push(id);S.words.filter(w=>w.lesson===id).forEach(w=>delete S.prog[w.id]);S.words=S.words.filter(w=>w.lesson!==id);S.lessons=S.lessons.filter(l=>l.id!==id);
-        if(ui.importLesson===id)ui.importLesson=null;ui.confirm=null;save();toast("Lektion gelöscht")}
-      else{ui.confirm="l:"+id;render()} break;
-    }
-    case "backup": {
-      const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));
-      const out=document.getElementById("bk-out");
-      const fallback=()=>{out.hidden=false;out.value=code;out.focus();out.select();toast("Code markiert – jetzt kopieren")};
-      try{navigator.clipboard.writeText(code).then(()=>toast("Sicherungscode kopiert"),fallback)}catch(err){fallback()}
-      break;
-    }
-    case "restore": {
-      if(ui.confirm!=="restore"){ui.confirm="restore";render();break}
-      ui.confirm=null;
-      try{const o=JSON.parse(decodeURIComponent(escape(atob(document.getElementById("bk-in").value.trim()))));if(!o||!Array.isArray(o.words))throw 0;S=fix(o);save();toast("Wiederhergestellt")}
-      catch(err){toast("Der Code ist ungültig oder unvollständig.")}
-      break;
-    }
-    case "reset": {
-      if(ui.confirm!=="reset"){ui.confirm="reset";render();break}
-      S.prog={};S.log=[];S.sessions=[];ui.confirm=null;save();toast("Lernstand zurückgesetzt"); break;
-    }
   }
 });
 document.addEventListener("change",e=>{
   const k=e.target.dataset.change; if(!k) return;
   if(k==="pr-lesson") ui.practice.lesson=e.target.value;
-  if(k==="photos"){
-    const fs=[...(e.target.files||[])].filter(f=>/^image\//.test(f.type)||/\.(heic|heif|jpe?g|png)$/i.test(f.name));
-    const room=Math.max(0,12-ui.photos.length);
-    fs.slice(0,room).forEach(f=>ui.photos.push({file:f,url:URL.createObjectURL(f)}));
-    if(fs.length>room) toast("Höchstens 12 Fotos auf einmal.");
-    e.target.value=""; ui.photoSent=false; ui.photoErr=false; render();
-  }
-  if(k==="lesson-filter"){ui.lessonFilter=e.target.value;render()}
-  if(k==="im-lesson"){ui.importLesson=e.target.value;render()}
-  if(k==="perday"){S.perDay=+e.target.value;save();toast("Gespeichert")}
-  if(k==="newperday"){S.newPerDay=+e.target.value;save();toast("Gespeichert")}
-});
-document.addEventListener("input",e=>{
-  const k=e.target.dataset.input;
-  if(k==="im-text"){ui.importText=e.target.value;const el=document.getElementById("im-count");if(el)el.textContent=countLabel()}
-  if(k==="im-name") ui.importName=e.target.value;
 });
 document.addEventListener("submit",e=>{
   e.preventDefault();
-  const f=e.target.dataset.form;
-  if(f==="ans") check();
-  if(f==="own"){
-    const v=id=>document.getElementById(id).value.trim();
-    const n=addWords([{de:v("ow-de"),en:v("ow-en"),sDe:v("ow-sde"),sEn:v("ow-sen")}].filter(x=>x.de&&x.en),"own","kind");
-    toast(n?"Word added":"You already have this word.");
-  }
+  if(e.target.dataset.form==="ans") check();
 });
 document.addEventListener("keydown",e=>{
   if(e.key==="Enter"&&e.target.id==="ans1"){e.preventDefault();const b=document.getElementById("ans2");if(b)b.focus();return}
   if(ui.view==="learn"&&ui.sess&&ui.sess.state==="done"&&e.key==="Enter"&&e.target.tagName!=="BUTTON"){e.preventDefault();next();return}
   if(e.key==="Escape"&&ui.show){ui.show=null;render();return}
-  if(ui.view==="lock"){if(/^[0-9]$/.test(e.key))pinDigit(e.key);else if(e.key==="Backspace"){ui.pin=ui.pin.slice(0,-1);render()}}
 });
-function pinDigit(d){
-  if(ui.pin.length>=4)return;
-  ui.pin+=d; ui.pinErr=false;
-  if(ui.pin.length<4){render();return}
-  if(ui.pinMode==="enter"){
-    if(ui.pin===S.pin){ui.pin="";ui.ptab="ueberblick";go("parent")}
-    else{ui.pin="";ui.pinErr=true;render()}
-    return;
-  }
-  if(!ui.pinFirst){ui.pinFirst=ui.pin;ui.pin="";render();return}
-  if(ui.pin===ui.pinFirst){S.pin=ui.pin;save();ui.pin="";ui.pinFirst=null;const wasChange=ui.pinMode==="change";ui.ptab=wasChange?"einst":"ueberblick";go("parent");toast("PIN gespeichert")}
-  else{ui.pin="";ui.pinFirst=null;ui.pinErr=true;render()}
-}
-
 render();
 syncLessons();
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)syncLessons()});

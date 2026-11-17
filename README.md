@@ -10,8 +10,8 @@ Auf dem iPad in Safari öffnen → Teilen → „Zum Home-Bildschirm“.
 - **Today:** tägliche Runde mit Karteikasten (Fach 1–5, Intervalle 1/2/4/7/14 Tage).
 - **Phrases:** Sätze für den Schulalltag. Antippen liest den deutschen Satz vor, „Show“ zeigt ihn groß auf dem Bildschirm.
 - **Practise:** Lektion und Modus frei wählen (verschiebt keine Fächer).
-- **My words:** eigene Wörter ergänzen.
-- **Take photos:** Arbeitsblätter fotografieren und an die Lehrkraft schicken.
+
+Kein Lehrkraft-Bereich, kein Foto-Senden, keine eigenen Wörter: Neue Vokabeln kommen nur über dieses Repository.
 
 ## Lernmodi
 Leicht: Flashcard, Multiple choice, Match pairs, **der/die/das**.
@@ -21,9 +21,8 @@ Beim Eintippen gilt:
 - Nomen nur mit Artikel richtig. Fehlender oder falscher Artikel zählt als falsch, mit Hinweis.
 - Fehlende Umlaute (a statt ä, ss statt ß) und Kleinschreibung zählen als richtig, mit Hinweis.
 
-## Lehrkraft-Bereich
-Button „Teacher“ oben rechts, 4-stellige PIN. Überblick, Problemwörter, Vokabeln bearbeiten, Listen einfügen.
-Einstellungen: Übungen pro Tag (Standard 25) und neue Wörter pro Runde (Standard 8).
+## Feste Einstellungen
+25 Übungen pro Runde, höchstens 8 neue Wörter pro Runde (in `src/app.html`: `PER_DAY`, `NEW_PER_ROUND`).
 Keine Konten, keine Namen, keine Synchronisation. Der Lernstand liegt nur im localStorage des iPads (Schlüssel `wortkasten-daz.v1`).
 
 ## Aufbau
@@ -57,4 +56,4 @@ Ich verstehe das nicht. ; I don't understand that.
 ```
 
 ## Neue Lektion
-Fotos der Arbeitsblätter → Claude erstellt Vokabeln mit Sätzen auf A1/A2-Niveau → `lektionen/<fach>.txt` ergänzen → `python3 tools/build_lessons.py` → commit + push. Beim nächsten Öffnen lädt die App die neuen Wörter.
+Fotos der Arbeitsblätter (macht die Lehrkraft) → Claude erstellt Vokabeln mit Sätzen auf A1/A2-Niveau → `lektionen/<fach>.txt` ergänzen → `python3 tools/build_lessons.py` → commit + push. Beim nächsten Öffnen lädt die App die neuen Wörter.
