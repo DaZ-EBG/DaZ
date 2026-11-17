@@ -1,0 +1,252 @@
+# Lektion: Basics: First words
+hallo ; hello ; Hallo, ich bin neu hier. ; Hello, I am new here.
+guten Morgen ; good morning ; Guten Morgen, Frau Weber! ; Good morning, Mrs Weber!
+tschüss ; bye ; Tschüss, bis morgen! ; Bye, see you tomorrow!
+ja ; yes ; Ja, das stimmt. ; Yes, that's right.
+nein ; no ; Nein, das verstehe ich nicht. ; No, I don't understand that.
+bitte ; please ; Kannst du mir bitte helfen? ; Can you help me, please?
+danke ; thank you / thanks ; Danke für deine Hilfe! ; Thanks for your help!
+Entschuldigung ; excuse me / sorry ; Entschuldigung, wo ist Raum 204? ; Excuse me, where is room 204?
+ich ; I ; Ich komme aus Indien. ; I come from India.
+du ; you (one friend) ; Wie heißt du? ; What's your name?
+Sie ; you (polite, e.g. to a teacher) ; Können Sie das bitte wiederholen? ; Can you repeat that, please?
+wir ; we ; Wir haben jetzt Mathe. ; We have maths now.
+heißen ; to be called ; Wie heißen Sie? ; What is your name? ; heißen - hieß - hat geheißen
+sein ; to be ; Ich möchte pünktlich sein. ; I want to be on time. ; sein - war - ist gewesen
+haben ; to have ; Wir haben heute Sport. ; We have PE today. ; haben - hatte - hat gehabt
+kommen ; to come ; Woher kommen Sie? ; Where do you come from? ; kommen - kam - ist gekommen
+wohnen ; to live (in a place) ; Wir wohnen in der Nähe der Schule. ; We live near the school.
+sprechen ; to speak ; Ich kann Englisch sprechen. ; I can speak English. ; sprechen - sprach - hat gesprochen
+verstehen ; to understand ; Ich kann das noch nicht verstehen. ; I can't understand that yet. ; verstehen - verstand - hat verstanden
+die Sprache ; language ; Deutsch ist eine schwere Sprache. ; German is a difficult language. ; die Sprachen
+der Name ; name ; Mein Name steht auf dem Heft. ; My name is on the exercise book. ; die Namen
+das Land ; country ; Indien ist ein großes Land. ; India is a big country. ; die Länder
+
+# Lektion: Basics: In the classroom
+der Raum ; room ; Der Raum ist im ersten Stock. ; The room is on the first floor. ; die Räume
+der Tisch ; table / desk ; Dein Buch liegt auf dem Tisch. ; Your book is on the desk. ; die Tische
+der Stuhl ; chair ; Ist dieser Stuhl frei? ; Is this chair free? ; die Stühle
+die Tafel ; board ; Bitte schreib das an die Tafel. ; Please write that on the board. ; die Tafeln
+das Buch ; book ; Das Buch liegt in meiner Tasche. ; The book is in my bag. ; die Bücher
+das Heft ; exercise book ; Schreibt die Wörter in euer Heft. ; Write the words in your exercise book. ; die Hefte
+das Arbeitsblatt ; worksheet ; Ich brauche noch ein Arbeitsblatt. ; I still need a worksheet. ; die Arbeitsblätter
+der Stift ; pen / pencil ; Kann ich deinen Stift leihen? ; Can I borrow your pen? ; die Stifte
+der Zettel ; piece of paper / note ; Schreib deine Antwort auf einen Zettel. ; Write your answer on a piece of paper. ; die Zettel
+die Seite ; page ; Wir sind auf Seite 45. ; We are on page 45. ; die Seiten
+die Aufgabe ; task / exercise ; Macht bitte Aufgabe 3. ; Please do exercise 3. ; die Aufgaben
+die Hausaufgabe ; homework (one task) ; Die Hausaufgabe ist bis Freitag. ; The homework is due on Friday. ; die Hausaufgaben
+der Lehrer ; teacher (male) ; Der Lehrer erklärt die Aufgabe. ; The teacher explains the task. ; die Lehrer
+die Lehrerin ; teacher (female) ; Die Lehrerin heißt Frau Weber. ; The teacher's name is Mrs Weber. ; die Lehrerinnen
+der Schüler ; student (male) ; Der Schüler neben mir ist nett. ; The student next to me is nice. ; die Schüler
+die Schülerin ; student (female) ; Sie ist eine neue Schülerin. ; She is a new student. ; die Schülerinnen
+die Klasse ; class ; Unsere Klasse hat 25 Schüler. ; Our class has 25 students. ; die Klassen
+die Frage ; question ; Ich habe eine Frage. ; I have a question. ; die Fragen
+die Antwort ; answer ; Die Antwort ist richtig. ; The answer is correct. ; die Antworten
+das Handy ; mobile phone ; Das Handy bleibt in der Tasche. ; The phone stays in the bag. ; die Handys
+die Tasche ; bag ; Meine Tasche ist sehr schwer. ; My bag is very heavy. ; die Taschen
+der Taschenrechner ; calculator ; In Mathe brauchen wir einen Taschenrechner. ; In maths we need a calculator. ; die Taschenrechner
+
+# Lektion: Basics: School and subjects
+die Schule ; school ; Die Schule beginnt um acht Uhr. ; School starts at eight o'clock. ; die Schulen
+der Unterricht ; lessons / teaching ; Der Unterricht ist um 13 Uhr zu Ende. ; Lessons end at 1 pm.
+die Stunde ; lesson / hour ; Die nächste Stunde ist Chemie. ; The next lesson is chemistry. ; die Stunden
+die Pause ; break ; In der Pause gehe ich auf den Schulhof. ; In the break I go to the schoolyard. ; die Pausen
+der Stundenplan ; timetable ; Kannst du mir den Stundenplan zeigen? ; Can you show me the timetable? ; die Stundenpläne
+das Fach ; subject ; Welches Fach magst du am liebsten? ; Which subject do you like best? ; die Fächer
+Mathe ; maths ; Heute schreiben wir einen Test in Mathe. ; Today we are writing a test in maths.
+Deutsch ; German ; Ich lerne jeden Tag Deutsch. ; I learn German every day.
+Englisch ; English ; In Englisch verstehe ich alles. ; In English I understand everything.
+Biologie ; biology ; In Biologie lernen wir etwas über die Zelle. ; In biology we learn about the cell.
+Chemie ; chemistry ; Chemie haben wir im Labor. ; We have chemistry in the lab.
+Physik ; physics ; Physik ist mein Lieblingsfach. ; Physics is my favourite subject.
+Geschichte ; history ; In Geschichte sprechen wir über Europa. ; In history we talk about Europe.
+Erdkunde ; geography ; In Erdkunde sehen wir eine Karte von Indien. ; In geography we look at a map of India.
+Politik ; politics ; Politik ist ein schweres Fach für mich. ; Politics is a difficult subject for me.
+Kunst ; art ; In Kunst malen wir ein Bild. ; In art we paint a picture.
+Musik ; music ; Musik haben wir in Raum 12. ; We have music in room 12.
+Sport ; PE / sports ; Für Sport brauche ich Sportschuhe. ; For PE I need trainers.
+die Klausur ; exam (written test) ; Nächste Woche schreiben wir eine Klausur. ; Next week we are writing an exam. ; die Klausuren
+die Note ; mark / grade ; Die beste Note ist eine Eins. ; The best mark is a 1. ; die Noten
+der Kurs ; course ; Der Kurs ist in Raum 108. ; The course is in room 108. ; die Kurse
+das Lehrerzimmer ; staff room ; Das Lehrerzimmer ist im Erdgeschoss. ; The staff room is on the ground floor. ; die Lehrerzimmer
+das Sekretariat ; school office ; Im Sekretariat bekommst du Hilfe. ; You get help in the school office. ; die Sekretariate
+die Bibliothek ; library ; In der Bibliothek ist es ruhig. ; It is quiet in the library. ; die Bibliotheken
+
+# Lektion: Basics: Task words
+lesen ; to read ; Wir lesen den Text zusammen. ; We read the text together. ; lesen - las - hat gelesen
+schreiben ; to write ; Wir schreiben einen kurzen Text. ; We write a short text. ; schreiben - schrieb - hat geschrieben
+nennen ; to name / to list ; Nennen Sie drei Beispiele. ; Name three examples. ; nennen - nannte - hat genannt
+beschreiben ; to describe ; Beschreiben Sie das Bild. ; Describe the picture. ; beschreiben - beschrieb - hat beschrieben
+erklären ; to explain ; Können Sie das noch einmal erklären? ; Can you explain that again?
+erläutern ; to explain in detail ; Erläutern Sie die Gründe für das Problem. ; Explain the reasons for the problem in detail.
+zusammenfassen ; to summarise ; Wir müssen den Text zusammenfassen. ; We have to summarise the text. ; zusammenfassen - fasste zusammen - hat zusammengefasst
+vergleichen ; to compare ; Vergleichen Sie die beiden Grafiken. ; Compare the two graphs. ; vergleichen - verglich - hat verglichen
+analysieren ; to analyse ; Analysieren Sie das Gedicht. ; Analyse the poem.
+begründen ; to give reasons for ; Begründen Sie Ihre Meinung. ; Give reasons for your opinion.
+beurteilen ; to assess / to judge ; Beurteilen Sie die Entscheidung. ; Assess the decision.
+berechnen ; to calculate ; Berechnen Sie die Fläche. ; Calculate the area.
+ergänzen ; to complete / to fill in ; Ergänzen Sie die Tabelle. ; Complete the table.
+markieren ; to highlight / to mark ; Markieren Sie die wichtigen Wörter. ; Highlight the important words.
+unterstreichen ; to underline ; Unterstreichen Sie die Verben. ; Underline the verbs. ; unterstreichen - unterstrich - hat unterstrichen
+ankreuzen ; to tick ; Kreuzen Sie die richtige Antwort an. ; Tick the correct answer.
+zuordnen ; to match ; Ordnen Sie die Begriffe zu. ; Match the terms.
+der Text ; text ; Der Text ist sehr lang. ; The text is very long. ; die Texte
+die Tabelle ; table (chart) ; Die Tabelle zeigt die Ergebnisse. ; The table shows the results. ; die Tabellen
+die Grafik ; graph / chart ; Die Grafik zeigt die Bevölkerung von Indien. ; The graph shows the population of India. ; die Grafiken
+das Beispiel ; example ; Kannst du mir ein Beispiel geben? ; Can you give me an example? ; die Beispiele
+die Lösung ; solution ; Die Lösung steht auf der Rückseite. ; The solution is on the back. ; die Lösungen
+
+# Lektion: Basics: Question words
+wer ; who ; Wer hat eine Idee? ; Who has an idea?
+was ; what ; Was bedeutet dieses Wort? ; What does this word mean?
+wo ; where ; Wo ist die Toilette? ; Where is the toilet?
+wohin ; where to ; Wohin gehen wir nach der Pause? ; Where do we go after the break?
+woher ; where from ; Woher kommst du? ; Where are you from?
+wann ; when ; Wann beginnt der Unterricht? ; When do lessons start?
+warum ; why ; Warum ist das falsch? ; Why is that wrong?
+wie ; how ; Wie schreibt man das? ; How do you write that?
+wie viel ; how much ; Wie viel kostet das Essen in der Mensa? ; How much does the food in the canteen cost?
+wie viele ; how many ; Wie viele Seiten müssen wir lesen? ; How many pages do we have to read?
+welcher / welche / welches ; which ; Welche Seite ist das? ; Which page is that?
+
+# Lektion: Basics: Numbers
+null ; zero ; Ich habe null Fehler! ; I have zero mistakes!
+eins ; one ; Eins plus eins ist zwei. ; One plus one is two.
+zwei ; two ; Wir haben zwei Stunden Deutsch. ; We have two lessons of German.
+drei ; three ; Macht bitte Aufgabe drei. ; Please do exercise three.
+vier ; four ; Wir arbeiten in Gruppen zu vier. ; We work in groups of four.
+fünf ; five ; Die Pause dauert fünf Minuten. ; The break lasts five minutes.
+sechs ; six ; Heute haben wir sechs Stunden. ; Today we have six lessons.
+sieben ; seven ; Der Bus kommt um sieben Uhr. ; The bus comes at seven o'clock.
+acht ; eight ; Die Schule beginnt um acht. ; School starts at eight.
+neun ; nine ; Wir sind auf Seite neun. ; We are on page nine.
+zehn ; ten ; Ich lerne jeden Tag zehn Wörter. ; I learn ten words every day.
+elf ; eleven ; Ich bin in Klasse elf. ; I am in year eleven.
+zwölf ; twelve ; Raum zwölf ist im Erdgeschoss. ; Room twelve is on the ground floor.
+zwanzig ; twenty ; Wir haben zwanzig Minuten Zeit. ; We have twenty minutes.
+dreißig ; thirty ; Die Klasse hat dreißig Schüler. ; The class has thirty students.
+hundert ; (one) hundred ; Das Buch hat hundert Seiten. ; The book has one hundred pages.
+tausend ; (one) thousand ; Tausend Dank! ; Thanks a thousand times!
+die Zahl ; number ; Schreib die Zahl an die Tafel. ; Write the number on the board. ; die Zahlen
+
+# Lektion: Basics: Time and days
+heute ; today ; Heute haben wir sechs Stunden. ; Today we have six lessons.
+morgen ; tomorrow ; Morgen schreiben wir einen Test. ; Tomorrow we are writing a test.
+gestern ; yesterday ; Gestern war ich krank. ; Yesterday I was ill.
+jetzt ; now ; Jetzt machen wir eine Pause. ; Now we take a break.
+später ; later ; Ich erkläre es dir später. ; I'll explain it to you later.
+früh ; early ; Ich muss früh aufstehen. ; I have to get up early.
+spät ; late ; Entschuldigung, ich bin zu spät. ; Sorry, I am late.
+die Uhr ; clock / o'clock ; Die Uhr im Klassenraum geht falsch. ; The clock in the classroom is wrong. ; die Uhren
+die Minute ; minute ; Warte bitte eine Minute. ; Please wait a minute. ; die Minuten
+die Zeit ; time ; Ich habe jetzt keine Zeit. ; I don't have time now.
+der Tag ; day ; Jeden Tag lerne ich neue Wörter. ; Every day I learn new words. ; die Tage
+die Woche ; week ; Nächste Woche haben wir Ferien. ; Next week we have holidays. ; die Wochen
+das Wochenende ; weekend ; Am Wochenende habe ich keine Schule. ; At the weekend I have no school. ; die Wochenenden
+der Monat ; month ; Ich bin seit einem Monat in Deutschland. ; I have been in Germany for a month. ; die Monate
+das Jahr ; year ; Im nächsten Jahr mache ich Abitur. ; Next year I'm doing my Abitur (final exams). ; die Jahre
+der Montag ; Monday ; Am Montag haben wir Physik. ; On Monday we have physics.
+der Dienstag ; Tuesday ; Am Dienstag habe ich Sport. ; On Tuesday I have PE.
+der Mittwoch ; Wednesday ; Am Mittwoch ist der Unterricht früh zu Ende. ; On Wednesday lessons end early.
+der Donnerstag ; Thursday ; Am Donnerstag schreiben wir eine Klausur. ; On Thursday we are writing an exam.
+der Freitag ; Friday ; Am Freitag gehen wir zusammen in die Stadt. ; On Friday we go to town together.
+der Samstag ; Saturday ; Am Samstag gehe ich einkaufen. ; On Saturday I go shopping.
+der Sonntag ; Sunday ; Am Sonntag ist der Supermarkt geschlossen. ; On Sunday the supermarket is closed.
+die Ferien ; holidays (school) ; In den Ferien fliege ich nach Indien. ; In the holidays I'm flying to India.
+
+# Lektion: Basics: Important verbs
+gehen ; to go (on foot) ; Wir gehen jetzt in die Mensa. ; We are going to the canteen now. ; gehen - ging - ist gegangen
+fahren ; to go (by bus, car, train) ; Wir fahren mit dem Bus zur Schule. ; We go to school by bus. ; fahren - fuhr - ist gefahren
+machen ; to do / to make ; Was machen wir heute? ; What are we doing today?
+lernen ; to learn ; Wir lernen heute neue Wörter. ; Today we learn new words.
+fragen ; to ask ; Du kannst mich immer fragen. ; You can always ask me.
+antworten ; to answer ; Ich möchte auf die Frage antworten. ; I would like to answer the question.
+sagen ; to say ; Was wollen Sie sagen? ; What do you want to say?
+wissen ; to know (a fact) ; Ich will mehr über Deutschland wissen. ; I want to know more about Germany. ; wissen - wusste - hat gewusst
+können ; can / to be able to ; Wir können zusammen arbeiten. ; We can work together. ; können - konnte - hat gekonnt
+müssen ; must / to have to ; Wir müssen das Buch lesen. ; We have to read the book. ; müssen - musste - hat gemusst
+dürfen ; may / to be allowed to ; Dürfen wir das Handy benutzen? ; Are we allowed to use the phone? ; dürfen - durfte - hat gedurft
+möchten ; would like to ; Wir möchten Deutsch lernen. ; We would like to learn German.
+brauchen ; to need ; Wir brauchen mehr Zeit. ; We need more time.
+helfen ; to help ; Kannst du mir helfen? ; Can you help me? ; helfen - half - hat geholfen
+zeigen ; to show ; Kannst du mir den Weg zeigen? ; Can you show me the way?
+arbeiten ; to work ; Wir arbeiten in Gruppen. ; We work in groups.
+wiederholen ; to repeat ; Können Sie das bitte wiederholen? ; Can you repeat that, please?
+beginnen ; to begin / to start ; Wann beginnen die Ferien? ; When do the holidays start? ; beginnen - begann - hat begonnen
+essen ; to eat ; Wir essen in der Mensa. ; We eat in the canteen. ; essen - aß - hat gegessen
+trinken ; to drink ; Darf ich im Unterricht Wasser trinken? ; May I drink water in class? ; trinken - trank - hat getrunken
+finden ; to find ; Ich kann meinen Raum nicht finden. ; I can't find my room. ; finden - fand - hat gefunden
+nehmen ; to take ; Bitte nehmen Sie ein Arbeitsblatt. ; Please take a worksheet. ; nehmen - nahm - hat genommen
+geben ; to give ; Kannst du mir das Buch geben? ; Can you give me the book? ; geben - gab - hat gegeben
+sehen ; to see ; Ich kann die Tafel nicht gut sehen. ; I can't see the board well. ; sehen - sah - hat gesehen
+
+# Lektion: Basics: Everyday life
+die Mensa ; school canteen ; Das Essen in der Mensa ist gut. ; The food in the canteen is good. ; die Mensen
+das Essen ; food / meal ; Das Essen ist heute vegetarisch. ; The food is vegetarian today.
+vegetarisch ; vegetarian ; Ich esse nur vegetarisch. ; I only eat vegetarian food.
+das Wasser ; water ; Kann ich ein Glas Wasser haben? ; Can I have a glass of water?
+die Toilette ; toilet ; Darf ich auf die Toilette gehen? ; May I go to the toilet? ; die Toiletten
+der Bus ; bus ; Der Bus fährt um 7:15 Uhr. ; The bus leaves at 7:15. ; die Busse
+der Bahnhof ; (train) station ; Der Bahnhof ist nicht weit von hier. ; The station is not far from here. ; die Bahnhöfe
+die Fahrkarte ; ticket ; Ich brauche eine Fahrkarte für den Bus. ; I need a ticket for the bus. ; die Fahrkarten
+die Straße ; street / road ; Die Straße ist sehr laut. ; The street is very loud. ; die Straßen
+das Haus ; house ; Unser Haus ist neben dem Park. ; Our house is next to the park. ; die Häuser
+die Wohnung ; flat / apartment ; Die Wohnung hat drei Zimmer. ; The flat has three rooms. ; die Wohnungen
+die Familie ; family ; Meine Familie wohnt jetzt in Deutschland. ; My family lives in Germany now. ; die Familien
+die Eltern ; parents ; Meine Eltern sprechen auch Englisch. ; My parents speak English too.
+der Bruder ; brother ; Mein Bruder ist zehn Jahre alt. ; My brother is ten years old. ; die Brüder
+die Schwester ; sister ; Meine Schwester geht auch auf diese Schule. ; My sister goes to this school too. ; die Schwestern
+der Freund ; friend (male) ; Er ist ein Freund aus meiner Klasse. ; He is a friend from my class. ; die Freunde
+die Freundin ; friend (female) ; Sie ist eine Freundin aus meinem Kurs. ; She is a friend from my course. ; die Freundinnen
+der Arzt ; doctor (male) ; Ich muss heute zum Arzt. ; I have to go to the doctor today. ; die Ärzte
+die Ärztin ; doctor (female) ; Die Ärztin spricht auch Englisch. ; The doctor speaks English too. ; die Ärztinnen
+einkaufen ; to go shopping ; Wir gehen nach der Schule einkaufen. ; We go shopping after school.
+das Geld ; money ; Ich habe kein Geld dabei. ; I don't have any money with me.
+der Supermarkt ; supermarket ; Der Supermarkt ist gleich um die Ecke. ; The supermarket is just around the corner. ; die Supermärkte
+das Wetter ; weather ; Das Wetter in Deutschland ist oft kalt. ; The weather in Germany is often cold.
+kalt ; cold ; Im Winter ist es hier sehr kalt. ; In winter it's very cold here.
+warm ; warm ; In Indien ist es meistens warm. ; In India it's usually warm.
+
+# Lektion: Basics: Feelings and describing words
+gut ; good / well ; Mir geht es gut. ; I'm fine.
+schlecht ; bad ; Mir geht es heute schlecht. ; I'm not feeling well today.
+müde ; tired ; Ich bin heute sehr müde. ; I'm very tired today.
+krank ; ill / sick ; Ich bin krank und bleibe zu Hause. ; I'm ill and staying at home.
+hungrig ; hungry ; Nach Sport bin ich immer hungrig. ; After PE I'm always hungry.
+glücklich ; happy ; Ich bin glücklich, dass du hier bist. ; I'm happy that you're here.
+traurig ; sad ; Manchmal bin ich traurig, weil ich meine Freunde vermisse. ; Sometimes I'm sad because I miss my friends.
+nervös ; nervous ; Vor der Klausur bin ich nervös. ; I'm nervous before the exam.
+neu ; new ; Ich bin neu in dieser Klasse. ; I'm new in this class.
+leicht ; easy / light ; Die Aufgabe ist leicht. ; The task is easy.
+schwer ; difficult / heavy ; Deutsch ist schwer, aber ich lerne schnell. ; German is difficult, but I learn fast.
+richtig ; right / correct ; Ist meine Antwort richtig? ; Is my answer correct?
+falsch ; wrong ; Das Wort ist falsch geschrieben. ; The word is spelt wrong.
+wichtig ; important ; Dieses Wort ist sehr wichtig. ; This word is very important.
+groß ; big / tall ; Die Schule ist sehr groß. ; The school is very big.
+klein ; small ; Mein Zimmer ist klein. ; My room is small.
+schnell ; fast / quickly ; Sie sprechen zu schnell für mich. ; You speak too fast for me.
+langsam ; slow / slowly ; Bitte sprechen Sie langsam. ; Please speak slowly.
+laut ; loud ; Es ist zu laut hier. ; It's too loud here.
+leise ; quiet ; Bitte seid leise! ; Please be quiet!
+fertig ; finished / ready ; Ich bin fertig mit der Aufgabe. ; I've finished the task.
+
+# Lektion: Basics: Little words
+und ; and ; Ich spreche Englisch und ein bisschen Deutsch. ; I speak English and a little German.
+oder ; or ; Möchtest du Tee oder Wasser? ; Would you like tea or water?
+aber ; but ; Ich verstehe viel, aber ich spreche noch wenig. ; I understand a lot, but I still speak little.
+weil ; because ; Ich lerne Deutsch, weil ich hier studieren möchte. ; I learn German because I want to study here.
+auch ; also / too ; Ich habe auch eine Frage. ; I have a question too.
+nicht ; not ; Das verstehe ich nicht. ; I don't understand that.
+kein / keine ; no / not a ; Ich habe keine Zeit. ; I have no time.
+noch ; still / yet ; Ich bin noch nicht fertig. ; I'm not finished yet.
+schon ; already ; Ich bin schon fertig. ; I'm already finished.
+sehr ; very ; Das ist sehr interessant. ; That's very interesting.
+viel ; much / a lot ; Ich habe heute viel gelernt. ; I learned a lot today.
+ein bisschen ; a little ; Ich spreche ein bisschen Deutsch. ; I speak a little German.
+mit ; with ; Kann ich mit dir arbeiten? ; Can I work with you?
+ohne ; without ; Ich habe die Aufgabe ohne Hilfe gemacht. ; I did the task without help.
+für ; for ; Das Heft ist für Mathe. ; The exercise book is for maths.
+hier ; here ; Ist hier noch frei? ; Is this seat free?
+dort ; there ; Dort ist die Bibliothek. ; The library is over there.
+vielleicht ; maybe ; Vielleicht kommt der Bus später. ; Maybe the bus is coming later.
+zusammen ; together ; Wir machen die Aufgabe zusammen. ; We do the task together.

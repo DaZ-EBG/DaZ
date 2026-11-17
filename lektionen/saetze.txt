@@ -1,0 +1,68 @@
+# Thema: In class
+Ich verstehe das nicht. ; I don't understand that.
+Können Sie das bitte wiederholen? ; Could you repeat that, please?
+Bitte sprechen Sie langsamer. ; Please speak more slowly.
+Können Sie das bitte aufschreiben? ; Could you write that down, please?
+Was bedeutet das? ; What does that mean?
+Wie sagt man das auf Deutsch? ; How do you say that in German?
+Kann ich das auf Englisch sagen? ; Can I say it in English?
+Welche Seite? ; Which page?
+Was sollen wir machen? ; What should we do?
+Ich habe eine Frage. ; I have a question.
+Ich bin fertig. ; I'm finished.
+Ich habe das Arbeitsblatt nicht. ; I don't have the worksheet.
+Darf ich mein Handy zum Übersetzen benutzen? ; May I use my phone to translate?
+Ich habe meine Hausaufgaben vergessen. ; I forgot my homework.
+Entschuldigung, ich bin zu spät. ; Sorry, I'm late.
+
+# Thema: Asking for help
+Können Sie mir bitte helfen? ; Can you help me, please? (to a teacher)
+Kannst du mir bitte helfen? ; Can you help me, please? (to a classmate)
+Wo ist Raum …? ; Where is room …?
+Wo ist die Toilette? ; Where is the toilet?
+Darf ich auf die Toilette gehen? ; May I go to the toilet?
+Wo ist das Sekretariat? ; Where is the school office?
+Wann ist die Pause? ; When is the break?
+Welchen Unterricht haben wir jetzt? ; Which lesson do we have now?
+Ich habe mich verlaufen. ; I'm lost.
+Kannst du mir den Weg zeigen? ; Can you show me the way?
+
+# Thema: About me
+Ich heiße … ; My name is …
+Ich komme aus Indien. ; I'm from India.
+Ich bin … Jahre alt. ; I'm … years old.
+Ich spreche Englisch. ; I speak English.
+Ich lerne Deutsch. ; I'm learning German.
+Ich spreche noch nicht gut Deutsch. ; I don't speak German well yet.
+Ich bin neu hier. ; I'm new here.
+Ich bin seit … Monaten in Deutschland. ; I've been in Germany for … months.
+Mein Lieblingsfach ist … ; My favourite subject is …
+
+# Thema: Classmates
+Hallo, wie geht's? ; Hi, how are you?
+Mir geht's gut, danke. Und dir? ; I'm fine, thanks. And you?
+Ist hier noch frei? ; Is this seat free?
+Darf ich mich zu euch setzen? ; May I sit with you?
+Kann ich deinen Stift leihen? ; Can I borrow your pen?
+Hast du die Hausaufgaben? ; Do you have the homework?
+Wollen wir zusammen arbeiten? ; Shall we work together?
+Danke, das ist nett. ; Thanks, that's kind.
+Bis morgen! ; See you tomorrow!
+
+# Thema: Not feeling well
+Mir geht es nicht gut. ; I don't feel well.
+Ich habe Kopfschmerzen. ; I have a headache.
+Ich habe Bauchschmerzen. ; I have a stomach ache.
+Mir ist schlecht. ; I feel sick.
+Ich muss nach Hause. ; I need to go home.
+Kann ich meine Eltern anrufen? ; Can I call my parents?
+Ich brauche einen Arzt. ; I need a doctor.
+
+# Thema: Canteen and town
+Was gibt es heute zu essen? ; What's for lunch today?
+Ist das vegetarisch? ; Is that vegetarian?
+Ist da Fleisch drin? ; Is there meat in it?
+Ich hätte gern … ; I would like …
+Wie viel kostet das? ; How much is that?
+Wann fährt der Bus? ; When does the bus leave?
+Wo ist die Haltestelle? ; Where is the bus stop?

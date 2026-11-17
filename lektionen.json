@@ -1,0 +1,2278 @@
+{
+ "version": 1,
+ "lessons": [
+  {
+   "id": "basics-first-words",
+   "name": "Basics: First words",
+   "words": [
+    {
+     "id": "basics-first-words--hallo",
+     "de": "hallo",
+     "en": "hello",
+     "sDe": "Hallo, ich bin neu hier.",
+     "sEn": "Hello, I am new here."
+    },
+    {
+     "id": "basics-first-words--guten-morgen",
+     "de": "guten Morgen",
+     "en": "good morning",
+     "sDe": "Guten Morgen, Frau Weber!",
+     "sEn": "Good morning, Mrs Weber!"
+    },
+    {
+     "id": "basics-first-words--tschuess",
+     "de": "tschüss",
+     "en": "bye",
+     "sDe": "Tschüss, bis morgen!",
+     "sEn": "Bye, see you tomorrow!"
+    },
+    {
+     "id": "basics-first-words--ja",
+     "de": "ja",
+     "en": "yes",
+     "sDe": "Ja, das stimmt.",
+     "sEn": "Yes, that's right."
+    },
+    {
+     "id": "basics-first-words--nein",
+     "de": "nein",
+     "en": "no",
+     "sDe": "Nein, das verstehe ich nicht.",
+     "sEn": "No, I don't understand that."
+    },
+    {
+     "id": "basics-first-words--bitte",
+     "de": "bitte",
+     "en": "please",
+     "sDe": "Kannst du mir bitte helfen?",
+     "sEn": "Can you help me, please?"
+    },
+    {
+     "id": "basics-first-words--danke",
+     "de": "danke",
+     "en": "thank you / thanks",
+     "sDe": "Danke für deine Hilfe!",
+     "sEn": "Thanks for your help!"
+    },
+    {
+     "id": "basics-first-words--entschuldigung",
+     "de": "Entschuldigung",
+     "en": "excuse me / sorry",
+     "sDe": "Entschuldigung, wo ist Raum 204?",
+     "sEn": "Excuse me, where is room 204?"
+    },
+    {
+     "id": "basics-first-words--ich",
+     "de": "ich",
+     "en": "I",
+     "sDe": "Ich komme aus Indien.",
+     "sEn": "I come from India."
+    },
+    {
+     "id": "basics-first-words--du",
+     "de": "du",
+     "en": "you (one friend)",
+     "sDe": "Wie heißt du?",
+     "sEn": "What's your name?"
+    },
+    {
+     "id": "basics-first-words--sie",
+     "de": "Sie",
+     "en": "you (polite, e.g. to a teacher)",
+     "sDe": "Können Sie das bitte wiederholen?",
+     "sEn": "Can you repeat that, please?"
+    },
+    {
+     "id": "basics-first-words--wir",
+     "de": "wir",
+     "en": "we",
+     "sDe": "Wir haben jetzt Mathe.",
+     "sEn": "We have maths now."
+    },
+    {
+     "id": "basics-first-words--heissen",
+     "de": "heißen",
+     "en": "to be called",
+     "sDe": "Wie heißen Sie?",
+     "sEn": "What is your name?",
+     "forms": [
+      "heißen",
+      "hieß",
+      "hat geheißen"
+     ]
+    },
+    {
+     "id": "basics-first-words--sein",
+     "de": "sein",
+     "en": "to be",
+     "sDe": "Ich möchte pünktlich sein.",
+     "sEn": "I want to be on time.",
+     "forms": [
+      "sein",
+      "war",
+      "ist gewesen"
+     ]
+    },
+    {
+     "id": "basics-first-words--haben",
+     "de": "haben",
+     "en": "to have",
+     "sDe": "Wir haben heute Sport.",
+     "sEn": "We have PE today.",
+     "forms": [
+      "haben",
+      "hatte",
+      "hat gehabt"
+     ]
+    },
+    {
+     "id": "basics-first-words--kommen",
+     "de": "kommen",
+     "en": "to come",
+     "sDe": "Woher kommen Sie?",
+     "sEn": "Where do you come from?",
+     "forms": [
+      "kommen",
+      "kam",
+      "ist gekommen"
+     ]
+    },
+    {
+     "id": "basics-first-words--wohnen",
+     "de": "wohnen",
+     "en": "to live (in a place)",
+     "sDe": "Wir wohnen in der Nähe der Schule.",
+     "sEn": "We live near the school."
+    },
+    {
+     "id": "basics-first-words--sprechen",
+     "de": "sprechen",
+     "en": "to speak",
+     "sDe": "Ich kann Englisch sprechen.",
+     "sEn": "I can speak English.",
+     "forms": [
+      "sprechen",
+      "sprach",
+      "hat gesprochen"
+     ]
+    },
+    {
+     "id": "basics-first-words--verstehen",
+     "de": "verstehen",
+     "en": "to understand",
+     "sDe": "Ich kann das noch nicht verstehen.",
+     "sEn": "I can't understand that yet.",
+     "forms": [
+      "verstehen",
+      "verstand",
+      "hat verstanden"
+     ]
+    },
+    {
+     "id": "basics-first-words--die-sprache",
+     "de": "die Sprache",
+     "en": "language",
+     "sDe": "Deutsch ist eine schwere Sprache.",
+     "sEn": "German is a difficult language.",
+     "forms": [
+      "die Sprachen"
+     ]
+    },
+    {
+     "id": "basics-first-words--der-name",
+     "de": "der Name",
+     "en": "name",
+     "sDe": "Mein Name steht auf dem Heft.",
+     "sEn": "My name is on the exercise book.",
+     "forms": [
+      "die Namen"
+     ]
+    },
+    {
+     "id": "basics-first-words--das-land",
+     "de": "das Land",
+     "en": "country",
+     "sDe": "Indien ist ein großes Land.",
+     "sEn": "India is a big country.",
+     "forms": [
+      "die Länder"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "basics-in-the-classroom",
+   "name": "Basics: In the classroom",
+   "words": [
+    {
+     "id": "basics-in-the-classroom--der-raum",
+     "de": "der Raum",
+     "en": "room",
+     "sDe": "Der Raum ist im ersten Stock.",
+     "sEn": "The room is on the first floor.",
+     "forms": [
+      "die Räume"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--der-tisch",
+     "de": "der Tisch",
+     "en": "table / desk",
+     "sDe": "Dein Buch liegt auf dem Tisch.",
+     "sEn": "Your book is on the desk.",
+     "forms": [
+      "die Tische"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--der-stuhl",
+     "de": "der Stuhl",
+     "en": "chair",
+     "sDe": "Ist dieser Stuhl frei?",
+     "sEn": "Is this chair free?",
+     "forms": [
+      "die Stühle"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-tafel",
+     "de": "die Tafel",
+     "en": "board",
+     "sDe": "Bitte schreib das an die Tafel.",
+     "sEn": "Please write that on the board.",
+     "forms": [
+      "die Tafeln"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--das-buch",
+     "de": "das Buch",
+     "en": "book",
+     "sDe": "Das Buch liegt in meiner Tasche.",
+     "sEn": "The book is in my bag.",
+     "forms": [
+      "die Bücher"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--das-heft",
+     "de": "das Heft",
+     "en": "exercise book",
+     "sDe": "Schreibt die Wörter in euer Heft.",
+     "sEn": "Write the words in your exercise book.",
+     "forms": [
+      "die Hefte"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--das-arbeitsblatt",
+     "de": "das Arbeitsblatt",
+     "en": "worksheet",
+     "sDe": "Ich brauche noch ein Arbeitsblatt.",
+     "sEn": "I still need a worksheet.",
+     "forms": [
+      "die Arbeitsblätter"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--der-stift",
+     "de": "der Stift",
+     "en": "pen / pencil",
+     "sDe": "Kann ich deinen Stift leihen?",
+     "sEn": "Can I borrow your pen?",
+     "forms": [
+      "die Stifte"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--der-zettel",
+     "de": "der Zettel",
+     "en": "piece of paper / note",
+     "sDe": "Schreib deine Antwort auf einen Zettel.",
+     "sEn": "Write your answer on a piece of paper.",
+     "forms": [
+      "die Zettel"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-seite",
+     "de": "die Seite",
+     "en": "page",
+     "sDe": "Wir sind auf Seite 45.",
+     "sEn": "We are on page 45.",
+     "forms": [
+      "die Seiten"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-aufgabe",
+     "de": "die Aufgabe",
+     "en": "task / exercise",
+     "sDe": "Macht bitte Aufgabe 3.",
+     "sEn": "Please do exercise 3.",
+     "forms": [
+      "die Aufgaben"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-hausaufgabe",
+     "de": "die Hausaufgabe",
+     "en": "homework (one task)",
+     "sDe": "Die Hausaufgabe ist bis Freitag.",
+     "sEn": "The homework is due on Friday.",
+     "forms": [
+      "die Hausaufgaben"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--der-lehrer",
+     "de": "der Lehrer",
+     "en": "teacher (male)",
+     "sDe": "Der Lehrer erklärt die Aufgabe.",
+     "sEn": "The teacher explains the task.",
+     "forms": [
+      "die Lehrer"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-lehrerin",
+     "de": "die Lehrerin",
+     "en": "teacher (female)",
+     "sDe": "Die Lehrerin heißt Frau Weber.",
+     "sEn": "The teacher's name is Mrs Weber.",
+     "forms": [
+      "die Lehrerinnen"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--der-schueler",
+     "de": "der Schüler",
+     "en": "student (male)",
+     "sDe": "Der Schüler neben mir ist nett.",
+     "sEn": "The student next to me is nice.",
+     "forms": [
+      "die Schüler"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-schuelerin",
+     "de": "die Schülerin",
+     "en": "student (female)",
+     "sDe": "Sie ist eine neue Schülerin.",
+     "sEn": "She is a new student.",
+     "forms": [
+      "die Schülerinnen"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-klasse",
+     "de": "die Klasse",
+     "en": "class",
+     "sDe": "Unsere Klasse hat 25 Schüler.",
+     "sEn": "Our class has 25 students.",
+     "forms": [
+      "die Klassen"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-frage",
+     "de": "die Frage",
+     "en": "question",
+     "sDe": "Ich habe eine Frage.",
+     "sEn": "I have a question.",
+     "forms": [
+      "die Fragen"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-antwort",
+     "de": "die Antwort",
+     "en": "answer",
+     "sDe": "Die Antwort ist richtig.",
+     "sEn": "The answer is correct.",
+     "forms": [
+      "die Antworten"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--das-handy",
+     "de": "das Handy",
+     "en": "mobile phone",
+     "sDe": "Das Handy bleibt in der Tasche.",
+     "sEn": "The phone stays in the bag.",
+     "forms": [
+      "die Handys"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--die-tasche",
+     "de": "die Tasche",
+     "en": "bag",
+     "sDe": "Meine Tasche ist sehr schwer.",
+     "sEn": "My bag is very heavy.",
+     "forms": [
+      "die Taschen"
+     ]
+    },
+    {
+     "id": "basics-in-the-classroom--der-taschenrechner",
+     "de": "der Taschenrechner",
+     "en": "calculator",
+     "sDe": "In Mathe brauchen wir einen Taschenrechner.",
+     "sEn": "In maths we need a calculator.",
+     "forms": [
+      "die Taschenrechner"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "basics-school-and-subjects",
+   "name": "Basics: School and subjects",
+   "words": [
+    {
+     "id": "basics-school-and-subjects--die-schule",
+     "de": "die Schule",
+     "en": "school",
+     "sDe": "Die Schule beginnt um acht Uhr.",
+     "sEn": "School starts at eight o'clock.",
+     "forms": [
+      "die Schulen"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--der-unterricht",
+     "de": "der Unterricht",
+     "en": "lessons / teaching",
+     "sDe": "Der Unterricht ist um 13 Uhr zu Ende.",
+     "sEn": "Lessons end at 1 pm."
+    },
+    {
+     "id": "basics-school-and-subjects--die-stunde",
+     "de": "die Stunde",
+     "en": "lesson / hour",
+     "sDe": "Die nächste Stunde ist Chemie.",
+     "sEn": "The next lesson is chemistry.",
+     "forms": [
+      "die Stunden"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--die-pause",
+     "de": "die Pause",
+     "en": "break",
+     "sDe": "In der Pause gehe ich auf den Schulhof.",
+     "sEn": "In the break I go to the schoolyard.",
+     "forms": [
+      "die Pausen"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--der-stundenplan",
+     "de": "der Stundenplan",
+     "en": "timetable",
+     "sDe": "Kannst du mir den Stundenplan zeigen?",
+     "sEn": "Can you show me the timetable?",
+     "forms": [
+      "die Stundenpläne"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--das-fach",
+     "de": "das Fach",
+     "en": "subject",
+     "sDe": "Welches Fach magst du am liebsten?",
+     "sEn": "Which subject do you like best?",
+     "forms": [
+      "die Fächer"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--mathe",
+     "de": "Mathe",
+     "en": "maths",
+     "sDe": "Heute schreiben wir einen Test in Mathe.",
+     "sEn": "Today we are writing a test in maths."
+    },
+    {
+     "id": "basics-school-and-subjects--deutsch",
+     "de": "Deutsch",
+     "en": "German",
+     "sDe": "Ich lerne jeden Tag Deutsch.",
+     "sEn": "I learn German every day."
+    },
+    {
+     "id": "basics-school-and-subjects--englisch",
+     "de": "Englisch",
+     "en": "English",
+     "sDe": "In Englisch verstehe ich alles.",
+     "sEn": "In English I understand everything."
+    },
+    {
+     "id": "basics-school-and-subjects--biologie",
+     "de": "Biologie",
+     "en": "biology",
+     "sDe": "In Biologie lernen wir etwas über die Zelle.",
+     "sEn": "In biology we learn about the cell."
+    },
+    {
+     "id": "basics-school-and-subjects--chemie",
+     "de": "Chemie",
+     "en": "chemistry",
+     "sDe": "Chemie haben wir im Labor.",
+     "sEn": "We have chemistry in the lab."
+    },
+    {
+     "id": "basics-school-and-subjects--physik",
+     "de": "Physik",
+     "en": "physics",
+     "sDe": "Physik ist mein Lieblingsfach.",
+     "sEn": "Physics is my favourite subject."
+    },
+    {
+     "id": "basics-school-and-subjects--geschichte",
+     "de": "Geschichte",
+     "en": "history",
+     "sDe": "In Geschichte sprechen wir über Europa.",
+     "sEn": "In history we talk about Europe."
+    },
+    {
+     "id": "basics-school-and-subjects--erdkunde",
+     "de": "Erdkunde",
+     "en": "geography",
+     "sDe": "In Erdkunde sehen wir eine Karte von Indien.",
+     "sEn": "In geography we look at a map of India."
+    },
+    {
+     "id": "basics-school-and-subjects--politik",
+     "de": "Politik",
+     "en": "politics",
+     "sDe": "Politik ist ein schweres Fach für mich.",
+     "sEn": "Politics is a difficult subject for me."
+    },
+    {
+     "id": "basics-school-and-subjects--kunst",
+     "de": "Kunst",
+     "en": "art",
+     "sDe": "In Kunst malen wir ein Bild.",
+     "sEn": "In art we paint a picture."
+    },
+    {
+     "id": "basics-school-and-subjects--musik",
+     "de": "Musik",
+     "en": "music",
+     "sDe": "Musik haben wir in Raum 12.",
+     "sEn": "We have music in room 12."
+    },
+    {
+     "id": "basics-school-and-subjects--sport",
+     "de": "Sport",
+     "en": "PE / sports",
+     "sDe": "Für Sport brauche ich Sportschuhe.",
+     "sEn": "For PE I need trainers."
+    },
+    {
+     "id": "basics-school-and-subjects--die-klausur",
+     "de": "die Klausur",
+     "en": "exam (written test)",
+     "sDe": "Nächste Woche schreiben wir eine Klausur.",
+     "sEn": "Next week we are writing an exam.",
+     "forms": [
+      "die Klausuren"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--die-note",
+     "de": "die Note",
+     "en": "mark / grade",
+     "sDe": "Die beste Note ist eine Eins.",
+     "sEn": "The best mark is a 1.",
+     "forms": [
+      "die Noten"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--der-kurs",
+     "de": "der Kurs",
+     "en": "course",
+     "sDe": "Der Kurs ist in Raum 108.",
+     "sEn": "The course is in room 108.",
+     "forms": [
+      "die Kurse"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--das-lehrerzimmer",
+     "de": "das Lehrerzimmer",
+     "en": "staff room",
+     "sDe": "Das Lehrerzimmer ist im Erdgeschoss.",
+     "sEn": "The staff room is on the ground floor.",
+     "forms": [
+      "die Lehrerzimmer"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--das-sekretariat",
+     "de": "das Sekretariat",
+     "en": "school office",
+     "sDe": "Im Sekretariat bekommst du Hilfe.",
+     "sEn": "You get help in the school office.",
+     "forms": [
+      "die Sekretariate"
+     ]
+    },
+    {
+     "id": "basics-school-and-subjects--die-bibliothek",
+     "de": "die Bibliothek",
+     "en": "library",
+     "sDe": "In der Bibliothek ist es ruhig.",
+     "sEn": "It is quiet in the library.",
+     "forms": [
+      "die Bibliotheken"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "basics-task-words",
+   "name": "Basics: Task words",
+   "words": [
+    {
+     "id": "basics-task-words--lesen",
+     "de": "lesen",
+     "en": "to read",
+     "sDe": "Wir lesen den Text zusammen.",
+     "sEn": "We read the text together.",
+     "forms": [
+      "lesen",
+      "las",
+      "hat gelesen"
+     ]
+    },
+    {
+     "id": "basics-task-words--schreiben",
+     "de": "schreiben",
+     "en": "to write",
+     "sDe": "Wir schreiben einen kurzen Text.",
+     "sEn": "We write a short text.",
+     "forms": [
+      "schreiben",
+      "schrieb",
+      "hat geschrieben"
+     ]
+    },
+    {
+     "id": "basics-task-words--nennen",
+     "de": "nennen",
+     "en": "to name / to list",
+     "sDe": "Nennen Sie drei Beispiele.",
+     "sEn": "Name three examples.",
+     "forms": [
+      "nennen",
+      "nannte",
+      "hat genannt"
+     ]
+    },
+    {
+     "id": "basics-task-words--beschreiben",
+     "de": "beschreiben",
+     "en": "to describe",
+     "sDe": "Beschreiben Sie das Bild.",
+     "sEn": "Describe the picture.",
+     "forms": [
+      "beschreiben",
+      "beschrieb",
+      "hat beschrieben"
+     ]
+    },
+    {
+     "id": "basics-task-words--erklaeren",
+     "de": "erklären",
+     "en": "to explain",
+     "sDe": "Können Sie das noch einmal erklären?",
+     "sEn": "Can you explain that again?"
+    },
+    {
+     "id": "basics-task-words--erlaeutern",
+     "de": "erläutern",
+     "en": "to explain in detail",
+     "sDe": "Erläutern Sie die Gründe für das Problem.",
+     "sEn": "Explain the reasons for the problem in detail."
+    },
+    {
+     "id": "basics-task-words--zusammenfassen",
+     "de": "zusammenfassen",
+     "en": "to summarise",
+     "sDe": "Wir müssen den Text zusammenfassen.",
+     "sEn": "We have to summarise the text.",
+     "forms": [
+      "zusammenfassen",
+      "fasste zusammen",
+      "hat zusammengefasst"
+     ]
+    },
+    {
+     "id": "basics-task-words--vergleichen",
+     "de": "vergleichen",
+     "en": "to compare",
+     "sDe": "Vergleichen Sie die beiden Grafiken.",
+     "sEn": "Compare the two graphs.",
+     "forms": [
+      "vergleichen",
+      "verglich",
+      "hat verglichen"
+     ]
+    },
+    {
+     "id": "basics-task-words--analysieren",
+     "de": "analysieren",
+     "en": "to analyse",
+     "sDe": "Analysieren Sie das Gedicht.",
+     "sEn": "Analyse the poem."
+    },
+    {
+     "id": "basics-task-words--begruenden",
+     "de": "begründen",
+     "en": "to give reasons for",
+     "sDe": "Begründen Sie Ihre Meinung.",
+     "sEn": "Give reasons for your opinion."
+    },
+    {
+     "id": "basics-task-words--beurteilen",
+     "de": "beurteilen",
+     "en": "to assess / to judge",
+     "sDe": "Beurteilen Sie die Entscheidung.",
+     "sEn": "Assess the decision."
+    },
+    {
+     "id": "basics-task-words--berechnen",
+     "de": "berechnen",
+     "en": "to calculate",
+     "sDe": "Berechnen Sie die Fläche.",
+     "sEn": "Calculate the area."
+    },
+    {
+     "id": "basics-task-words--ergaenzen",
+     "de": "ergänzen",
+     "en": "to complete / to fill in",
+     "sDe": "Ergänzen Sie die Tabelle.",
+     "sEn": "Complete the table."
+    },
+    {
+     "id": "basics-task-words--markieren",
+     "de": "markieren",
+     "en": "to highlight / to mark",
+     "sDe": "Markieren Sie die wichtigen Wörter.",
+     "sEn": "Highlight the important words."
+    },
+    {
+     "id": "basics-task-words--unterstreichen",
+     "de": "unterstreichen",
+     "en": "to underline",
+     "sDe": "Unterstreichen Sie die Verben.",
+     "sEn": "Underline the verbs.",
+     "forms": [
+      "unterstreichen",
+      "unterstrich",
+      "hat unterstrichen"
+     ]
+    },
+    {
+     "id": "basics-task-words--ankreuzen",
+     "de": "ankreuzen",
+     "en": "to tick",
+     "sDe": "Kreuzen Sie die richtige Antwort an.",
+     "sEn": "Tick the correct answer."
+    },
+    {
+     "id": "basics-task-words--zuordnen",
+     "de": "zuordnen",
+     "en": "to match",
+     "sDe": "Ordnen Sie die Begriffe zu.",
+     "sEn": "Match the terms."
+    },
+    {
+     "id": "basics-task-words--der-text",
+     "de": "der Text",
+     "en": "text",
+     "sDe": "Der Text ist sehr lang.",
+     "sEn": "The text is very long.",
+     "forms": [
+      "die Texte"
+     ]
+    },
+    {
+     "id": "basics-task-words--die-tabelle",
+     "de": "die Tabelle",
+     "en": "table (chart)",
+     "sDe": "Die Tabelle zeigt die Ergebnisse.",
+     "sEn": "The table shows the results.",
+     "forms": [
+      "die Tabellen"
+     ]
+    },
+    {
+     "id": "basics-task-words--die-grafik",
+     "de": "die Grafik",
+     "en": "graph / chart",
+     "sDe": "Die Grafik zeigt die Bevölkerung von Indien.",
+     "sEn": "The graph shows the population of India.",
+     "forms": [
+      "die Grafiken"
+     ]
+    },
+    {
+     "id": "basics-task-words--das-beispiel",
+     "de": "das Beispiel",
+     "en": "example",
+     "sDe": "Kannst du mir ein Beispiel geben?",
+     "sEn": "Can you give me an example?",
+     "forms": [
+      "die Beispiele"
+     ]
+    },
+    {
+     "id": "basics-task-words--die-loesung",
+     "de": "die Lösung",
+     "en": "solution",
+     "sDe": "Die Lösung steht auf der Rückseite.",
+     "sEn": "The solution is on the back.",
+     "forms": [
+      "die Lösungen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "basics-question-words",
+   "name": "Basics: Question words",
+   "words": [
+    {
+     "id": "basics-question-words--wer",
+     "de": "wer",
+     "en": "who",
+     "sDe": "Wer hat eine Idee?",
+     "sEn": "Who has an idea?"
+    },
+    {
+     "id": "basics-question-words--was",
+     "de": "was",
+     "en": "what",
+     "sDe": "Was bedeutet dieses Wort?",
+     "sEn": "What does this word mean?"
+    },
+    {
+     "id": "basics-question-words--wo",
+     "de": "wo",
+     "en": "where",
+     "sDe": "Wo ist die Toilette?",
+     "sEn": "Where is the toilet?"
+    },
+    {
+     "id": "basics-question-words--wohin",
+     "de": "wohin",
+     "en": "where to",
+     "sDe": "Wohin gehen wir nach der Pause?",
+     "sEn": "Where do we go after the break?"
+    },
+    {
+     "id": "basics-question-words--woher",
+     "de": "woher",
+     "en": "where from",
+     "sDe": "Woher kommst du?",
+     "sEn": "Where are you from?"
+    },
+    {
+     "id": "basics-question-words--wann",
+     "de": "wann",
+     "en": "when",
+     "sDe": "Wann beginnt der Unterricht?",
+     "sEn": "When do lessons start?"
+    },
+    {
+     "id": "basics-question-words--warum",
+     "de": "warum",
+     "en": "why",
+     "sDe": "Warum ist das falsch?",
+     "sEn": "Why is that wrong?"
+    },
+    {
+     "id": "basics-question-words--wie",
+     "de": "wie",
+     "en": "how",
+     "sDe": "Wie schreibt man das?",
+     "sEn": "How do you write that?"
+    },
+    {
+     "id": "basics-question-words--wie-viel",
+     "de": "wie viel",
+     "en": "how much",
+     "sDe": "Wie viel kostet das Essen in der Mensa?",
+     "sEn": "How much does the food in the canteen cost?"
+    },
+    {
+     "id": "basics-question-words--wie-viele",
+     "de": "wie viele",
+     "en": "how many",
+     "sDe": "Wie viele Seiten müssen wir lesen?",
+     "sEn": "How many pages do we have to read?"
+    },
+    {
+     "id": "basics-question-words--welcher",
+     "de": "welcher / welche / welches",
+     "en": "which",
+     "sDe": "Welche Seite ist das?",
+     "sEn": "Which page is that?"
+    }
+   ]
+  },
+  {
+   "id": "basics-numbers",
+   "name": "Basics: Numbers",
+   "words": [
+    {
+     "id": "basics-numbers--null",
+     "de": "null",
+     "en": "zero",
+     "sDe": "Ich habe null Fehler!",
+     "sEn": "I have zero mistakes!"
+    },
+    {
+     "id": "basics-numbers--eins",
+     "de": "eins",
+     "en": "one",
+     "sDe": "Eins plus eins ist zwei.",
+     "sEn": "One plus one is two."
+    },
+    {
+     "id": "basics-numbers--zwei",
+     "de": "zwei",
+     "en": "two",
+     "sDe": "Wir haben zwei Stunden Deutsch.",
+     "sEn": "We have two lessons of German."
+    },
+    {
+     "id": "basics-numbers--drei",
+     "de": "drei",
+     "en": "three",
+     "sDe": "Macht bitte Aufgabe drei.",
+     "sEn": "Please do exercise three."
+    },
+    {
+     "id": "basics-numbers--vier",
+     "de": "vier",
+     "en": "four",
+     "sDe": "Wir arbeiten in Gruppen zu vier.",
+     "sEn": "We work in groups of four."
+    },
+    {
+     "id": "basics-numbers--fuenf",
+     "de": "fünf",
+     "en": "five",
+     "sDe": "Die Pause dauert fünf Minuten.",
+     "sEn": "The break lasts five minutes."
+    },
+    {
+     "id": "basics-numbers--sechs",
+     "de": "sechs",
+     "en": "six",
+     "sDe": "Heute haben wir sechs Stunden.",
+     "sEn": "Today we have six lessons."
+    },
+    {
+     "id": "basics-numbers--sieben",
+     "de": "sieben",
+     "en": "seven",
+     "sDe": "Der Bus kommt um sieben Uhr.",
+     "sEn": "The bus comes at seven o'clock."
+    },
+    {
+     "id": "basics-numbers--acht",
+     "de": "acht",
+     "en": "eight",
+     "sDe": "Die Schule beginnt um acht.",
+     "sEn": "School starts at eight."
+    },
+    {
+     "id": "basics-numbers--neun",
+     "de": "neun",
+     "en": "nine",
+     "sDe": "Wir sind auf Seite neun.",
+     "sEn": "We are on page nine."
+    },
+    {
+     "id": "basics-numbers--zehn",
+     "de": "zehn",
+     "en": "ten",
+     "sDe": "Ich lerne jeden Tag zehn Wörter.",
+     "sEn": "I learn ten words every day."
+    },
+    {
+     "id": "basics-numbers--elf",
+     "de": "elf",
+     "en": "eleven",
+     "sDe": "Ich bin in Klasse elf.",
+     "sEn": "I am in year eleven."
+    },
+    {
+     "id": "basics-numbers--zwoelf",
+     "de": "zwölf",
+     "en": "twelve",
+     "sDe": "Raum zwölf ist im Erdgeschoss.",
+     "sEn": "Room twelve is on the ground floor."
+    },
+    {
+     "id": "basics-numbers--zwanzig",
+     "de": "zwanzig",
+     "en": "twenty",
+     "sDe": "Wir haben zwanzig Minuten Zeit.",
+     "sEn": "We have twenty minutes."
+    },
+    {
+     "id": "basics-numbers--dreissig",
+     "de": "dreißig",
+     "en": "thirty",
+     "sDe": "Die Klasse hat dreißig Schüler.",
+     "sEn": "The class has thirty students."
+    },
+    {
+     "id": "basics-numbers--hundert",
+     "de": "hundert",
+     "en": "(one) hundred",
+     "sDe": "Das Buch hat hundert Seiten.",
+     "sEn": "The book has one hundred pages."
+    },
+    {
+     "id": "basics-numbers--tausend",
+     "de": "tausend",
+     "en": "(one) thousand",
+     "sDe": "Tausend Dank!",
+     "sEn": "Thanks a thousand times!"
+    },
+    {
+     "id": "basics-numbers--die-zahl",
+     "de": "die Zahl",
+     "en": "number",
+     "sDe": "Schreib die Zahl an die Tafel.",
+     "sEn": "Write the number on the board.",
+     "forms": [
+      "die Zahlen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "basics-time-and-days",
+   "name": "Basics: Time and days",
+   "words": [
+    {
+     "id": "basics-time-and-days--heute",
+     "de": "heute",
+     "en": "today",
+     "sDe": "Heute haben wir sechs Stunden.",
+     "sEn": "Today we have six lessons."
+    },
+    {
+     "id": "basics-time-and-days--morgen",
+     "de": "morgen",
+     "en": "tomorrow",
+     "sDe": "Morgen schreiben wir einen Test.",
+     "sEn": "Tomorrow we are writing a test."
+    },
+    {
+     "id": "basics-time-and-days--gestern",
+     "de": "gestern",
+     "en": "yesterday",
+     "sDe": "Gestern war ich krank.",
+     "sEn": "Yesterday I was ill."
+    },
+    {
+     "id": "basics-time-and-days--jetzt",
+     "de": "jetzt",
+     "en": "now",
+     "sDe": "Jetzt machen wir eine Pause.",
+     "sEn": "Now we take a break."
+    },
+    {
+     "id": "basics-time-and-days--spaeter",
+     "de": "später",
+     "en": "later",
+     "sDe": "Ich erkläre es dir später.",
+     "sEn": "I'll explain it to you later."
+    },
+    {
+     "id": "basics-time-and-days--frueh",
+     "de": "früh",
+     "en": "early",
+     "sDe": "Ich muss früh aufstehen.",
+     "sEn": "I have to get up early."
+    },
+    {
+     "id": "basics-time-and-days--spaet",
+     "de": "spät",
+     "en": "late",
+     "sDe": "Entschuldigung, ich bin zu spät.",
+     "sEn": "Sorry, I am late."
+    },
+    {
+     "id": "basics-time-and-days--die-uhr",
+     "de": "die Uhr",
+     "en": "clock / o'clock",
+     "sDe": "Die Uhr im Klassenraum geht falsch.",
+     "sEn": "The clock in the classroom is wrong.",
+     "forms": [
+      "die Uhren"
+     ]
+    },
+    {
+     "id": "basics-time-and-days--die-minute",
+     "de": "die Minute",
+     "en": "minute",
+     "sDe": "Warte bitte eine Minute.",
+     "sEn": "Please wait a minute.",
+     "forms": [
+      "die Minuten"
+     ]
+    },
+    {
+     "id": "basics-time-and-days--die-zeit",
+     "de": "die Zeit",
+     "en": "time",
+     "sDe": "Ich habe jetzt keine Zeit.",
+     "sEn": "I don't have time now."
+    },
+    {
+     "id": "basics-time-and-days--der-tag",
+     "de": "der Tag",
+     "en": "day",
+     "sDe": "Jeden Tag lerne ich neue Wörter.",
+     "sEn": "Every day I learn new words.",
+     "forms": [
+      "die Tage"
+     ]
+    },
+    {
+     "id": "basics-time-and-days--die-woche",
+     "de": "die Woche",
+     "en": "week",
+     "sDe": "Nächste Woche haben wir Ferien.",
+     "sEn": "Next week we have holidays.",
+     "forms": [
+      "die Wochen"
+     ]
+    },
+    {
+     "id": "basics-time-and-days--das-wochenende",
+     "de": "das Wochenende",
+     "en": "weekend",
+     "sDe": "Am Wochenende habe ich keine Schule.",
+     "sEn": "At the weekend I have no school.",
+     "forms": [
+      "die Wochenenden"
+     ]
+    },
+    {
+     "id": "basics-time-and-days--der-monat",
+     "de": "der Monat",
+     "en": "month",
+     "sDe": "Ich bin seit einem Monat in Deutschland.",
+     "sEn": "I have been in Germany for a month.",
+     "forms": [
+      "die Monate"
+     ]
+    },
+    {
+     "id": "basics-time-and-days--das-jahr",
+     "de": "das Jahr",
+     "en": "year",
+     "sDe": "Im nächsten Jahr mache ich Abitur.",
+     "sEn": "Next year I'm doing my Abitur (final exams).",
+     "forms": [
+      "die Jahre"
+     ]
+    },
+    {
+     "id": "basics-time-and-days--der-montag",
+     "de": "der Montag",
+     "en": "Monday",
+     "sDe": "Am Montag haben wir Physik.",
+     "sEn": "On Monday we have physics."
+    },
+    {
+     "id": "basics-time-and-days--der-dienstag",
+     "de": "der Dienstag",
+     "en": "Tuesday",
+     "sDe": "Am Dienstag habe ich Sport.",
+     "sEn": "On Tuesday I have PE."
+    },
+    {
+     "id": "basics-time-and-days--der-mittwoch",
+     "de": "der Mittwoch",
+     "en": "Wednesday",
+     "sDe": "Am Mittwoch ist der Unterricht früh zu Ende.",
+     "sEn": "On Wednesday lessons end early."
+    },
+    {
+     "id": "basics-time-and-days--der-donnerstag",
+     "de": "der Donnerstag",
+     "en": "Thursday",
+     "sDe": "Am Donnerstag schreiben wir eine Klausur.",
+     "sEn": "On Thursday we are writing an exam."
+    },
+    {
+     "id": "basics-time-and-days--der-freitag",
+     "de": "der Freitag",
+     "en": "Friday",
+     "sDe": "Am Freitag gehen wir zusammen in die Stadt.",
+     "sEn": "On Friday we go to town together."
+    },
+    {
+     "id": "basics-time-and-days--der-samstag",
+     "de": "der Samstag",
+     "en": "Saturday",
+     "sDe": "Am Samstag gehe ich einkaufen.",
+     "sEn": "On Saturday I go shopping."
+    },
+    {
+     "id": "basics-time-and-days--der-sonntag",
+     "de": "der Sonntag",
+     "en": "Sunday",
+     "sDe": "Am Sonntag ist der Supermarkt geschlossen.",
+     "sEn": "On Sunday the supermarket is closed."
+    },
+    {
+     "id": "basics-time-and-days--die-ferien",
+     "de": "die Ferien",
+     "en": "holidays (school)",
+     "sDe": "In den Ferien fliege ich nach Indien.",
+     "sEn": "In the holidays I'm flying to India."
+    }
+   ]
+  },
+  {
+   "id": "basics-important-verbs",
+   "name": "Basics: Important verbs",
+   "words": [
+    {
+     "id": "basics-important-verbs--gehen",
+     "de": "gehen",
+     "en": "to go (on foot)",
+     "sDe": "Wir gehen jetzt in die Mensa.",
+     "sEn": "We are going to the canteen now.",
+     "forms": [
+      "gehen",
+      "ging",
+      "ist gegangen"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--fahren",
+     "de": "fahren",
+     "en": "to go (by bus, car, train)",
+     "sDe": "Wir fahren mit dem Bus zur Schule.",
+     "sEn": "We go to school by bus.",
+     "forms": [
+      "fahren",
+      "fuhr",
+      "ist gefahren"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--machen",
+     "de": "machen",
+     "en": "to do / to make",
+     "sDe": "Was machen wir heute?",
+     "sEn": "What are we doing today?"
+    },
+    {
+     "id": "basics-important-verbs--lernen",
+     "de": "lernen",
+     "en": "to learn",
+     "sDe": "Wir lernen heute neue Wörter.",
+     "sEn": "Today we learn new words."
+    },
+    {
+     "id": "basics-important-verbs--fragen",
+     "de": "fragen",
+     "en": "to ask",
+     "sDe": "Du kannst mich immer fragen.",
+     "sEn": "You can always ask me."
+    },
+    {
+     "id": "basics-important-verbs--antworten",
+     "de": "antworten",
+     "en": "to answer",
+     "sDe": "Ich möchte auf die Frage antworten.",
+     "sEn": "I would like to answer the question."
+    },
+    {
+     "id": "basics-important-verbs--sagen",
+     "de": "sagen",
+     "en": "to say",
+     "sDe": "Was wollen Sie sagen?",
+     "sEn": "What do you want to say?"
+    },
+    {
+     "id": "basics-important-verbs--wissen",
+     "de": "wissen",
+     "en": "to know (a fact)",
+     "sDe": "Ich will mehr über Deutschland wissen.",
+     "sEn": "I want to know more about Germany.",
+     "forms": [
+      "wissen",
+      "wusste",
+      "hat gewusst"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--koennen",
+     "de": "können",
+     "en": "can / to be able to",
+     "sDe": "Wir können zusammen arbeiten.",
+     "sEn": "We can work together.",
+     "forms": [
+      "können",
+      "konnte",
+      "hat gekonnt"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--muessen",
+     "de": "müssen",
+     "en": "must / to have to",
+     "sDe": "Wir müssen das Buch lesen.",
+     "sEn": "We have to read the book.",
+     "forms": [
+      "müssen",
+      "musste",
+      "hat gemusst"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--duerfen",
+     "de": "dürfen",
+     "en": "may / to be allowed to",
+     "sDe": "Dürfen wir das Handy benutzen?",
+     "sEn": "Are we allowed to use the phone?",
+     "forms": [
+      "dürfen",
+      "durfte",
+      "hat gedurft"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--moechten",
+     "de": "möchten",
+     "en": "would like to",
+     "sDe": "Wir möchten Deutsch lernen.",
+     "sEn": "We would like to learn German."
+    },
+    {
+     "id": "basics-important-verbs--brauchen",
+     "de": "brauchen",
+     "en": "to need",
+     "sDe": "Wir brauchen mehr Zeit.",
+     "sEn": "We need more time."
+    },
+    {
+     "id": "basics-important-verbs--helfen",
+     "de": "helfen",
+     "en": "to help",
+     "sDe": "Kannst du mir helfen?",
+     "sEn": "Can you help me?",
+     "forms": [
+      "helfen",
+      "half",
+      "hat geholfen"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--zeigen",
+     "de": "zeigen",
+     "en": "to show",
+     "sDe": "Kannst du mir den Weg zeigen?",
+     "sEn": "Can you show me the way?"
+    },
+    {
+     "id": "basics-important-verbs--arbeiten",
+     "de": "arbeiten",
+     "en": "to work",
+     "sDe": "Wir arbeiten in Gruppen.",
+     "sEn": "We work in groups."
+    },
+    {
+     "id": "basics-important-verbs--wiederholen",
+     "de": "wiederholen",
+     "en": "to repeat",
+     "sDe": "Können Sie das bitte wiederholen?",
+     "sEn": "Can you repeat that, please?"
+    },
+    {
+     "id": "basics-important-verbs--beginnen",
+     "de": "beginnen",
+     "en": "to begin / to start",
+     "sDe": "Wann beginnen die Ferien?",
+     "sEn": "When do the holidays start?",
+     "forms": [
+      "beginnen",
+      "begann",
+      "hat begonnen"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--essen",
+     "de": "essen",
+     "en": "to eat",
+     "sDe": "Wir essen in der Mensa.",
+     "sEn": "We eat in the canteen.",
+     "forms": [
+      "essen",
+      "aß",
+      "hat gegessen"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--trinken",
+     "de": "trinken",
+     "en": "to drink",
+     "sDe": "Darf ich im Unterricht Wasser trinken?",
+     "sEn": "May I drink water in class?",
+     "forms": [
+      "trinken",
+      "trank",
+      "hat getrunken"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--finden",
+     "de": "finden",
+     "en": "to find",
+     "sDe": "Ich kann meinen Raum nicht finden.",
+     "sEn": "I can't find my room.",
+     "forms": [
+      "finden",
+      "fand",
+      "hat gefunden"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--nehmen",
+     "de": "nehmen",
+     "en": "to take",
+     "sDe": "Bitte nehmen Sie ein Arbeitsblatt.",
+     "sEn": "Please take a worksheet.",
+     "forms": [
+      "nehmen",
+      "nahm",
+      "hat genommen"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--geben",
+     "de": "geben",
+     "en": "to give",
+     "sDe": "Kannst du mir das Buch geben?",
+     "sEn": "Can you give me the book?",
+     "forms": [
+      "geben",
+      "gab",
+      "hat gegeben"
+     ]
+    },
+    {
+     "id": "basics-important-verbs--sehen",
+     "de": "sehen",
+     "en": "to see",
+     "sDe": "Ich kann die Tafel nicht gut sehen.",
+     "sEn": "I can't see the board well.",
+     "forms": [
+      "sehen",
+      "sah",
+      "hat gesehen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "basics-everyday-life",
+   "name": "Basics: Everyday life",
+   "words": [
+    {
+     "id": "basics-everyday-life--die-mensa",
+     "de": "die Mensa",
+     "en": "school canteen",
+     "sDe": "Das Essen in der Mensa ist gut.",
+     "sEn": "The food in the canteen is good.",
+     "forms": [
+      "die Mensen"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--das-essen",
+     "de": "das Essen",
+     "en": "food / meal",
+     "sDe": "Das Essen ist heute vegetarisch.",
+     "sEn": "The food is vegetarian today."
+    },
+    {
+     "id": "basics-everyday-life--vegetarisch",
+     "de": "vegetarisch",
+     "en": "vegetarian",
+     "sDe": "Ich esse nur vegetarisch.",
+     "sEn": "I only eat vegetarian food."
+    },
+    {
+     "id": "basics-everyday-life--das-wasser",
+     "de": "das Wasser",
+     "en": "water",
+     "sDe": "Kann ich ein Glas Wasser haben?",
+     "sEn": "Can I have a glass of water?"
+    },
+    {
+     "id": "basics-everyday-life--die-toilette",
+     "de": "die Toilette",
+     "en": "toilet",
+     "sDe": "Darf ich auf die Toilette gehen?",
+     "sEn": "May I go to the toilet?",
+     "forms": [
+      "die Toiletten"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--der-bus",
+     "de": "der Bus",
+     "en": "bus",
+     "sDe": "Der Bus fährt um 7:15 Uhr.",
+     "sEn": "The bus leaves at 7:15.",
+     "forms": [
+      "die Busse"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--der-bahnhof",
+     "de": "der Bahnhof",
+     "en": "(train) station",
+     "sDe": "Der Bahnhof ist nicht weit von hier.",
+     "sEn": "The station is not far from here.",
+     "forms": [
+      "die Bahnhöfe"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-fahrkarte",
+     "de": "die Fahrkarte",
+     "en": "ticket",
+     "sDe": "Ich brauche eine Fahrkarte für den Bus.",
+     "sEn": "I need a ticket for the bus.",
+     "forms": [
+      "die Fahrkarten"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-strasse",
+     "de": "die Straße",
+     "en": "street / road",
+     "sDe": "Die Straße ist sehr laut.",
+     "sEn": "The street is very loud.",
+     "forms": [
+      "die Straßen"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--das-haus",
+     "de": "das Haus",
+     "en": "house",
+     "sDe": "Unser Haus ist neben dem Park.",
+     "sEn": "Our house is next to the park.",
+     "forms": [
+      "die Häuser"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-wohnung",
+     "de": "die Wohnung",
+     "en": "flat / apartment",
+     "sDe": "Die Wohnung hat drei Zimmer.",
+     "sEn": "The flat has three rooms.",
+     "forms": [
+      "die Wohnungen"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-familie",
+     "de": "die Familie",
+     "en": "family",
+     "sDe": "Meine Familie wohnt jetzt in Deutschland.",
+     "sEn": "My family lives in Germany now.",
+     "forms": [
+      "die Familien"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-eltern",
+     "de": "die Eltern",
+     "en": "parents",
+     "sDe": "Meine Eltern sprechen auch Englisch.",
+     "sEn": "My parents speak English too."
+    },
+    {
+     "id": "basics-everyday-life--der-bruder",
+     "de": "der Bruder",
+     "en": "brother",
+     "sDe": "Mein Bruder ist zehn Jahre alt.",
+     "sEn": "My brother is ten years old.",
+     "forms": [
+      "die Brüder"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-schwester",
+     "de": "die Schwester",
+     "en": "sister",
+     "sDe": "Meine Schwester geht auch auf diese Schule.",
+     "sEn": "My sister goes to this school too.",
+     "forms": [
+      "die Schwestern"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--der-freund",
+     "de": "der Freund",
+     "en": "friend (male)",
+     "sDe": "Er ist ein Freund aus meiner Klasse.",
+     "sEn": "He is a friend from my class.",
+     "forms": [
+      "die Freunde"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-freundin",
+     "de": "die Freundin",
+     "en": "friend (female)",
+     "sDe": "Sie ist eine Freundin aus meinem Kurs.",
+     "sEn": "She is a friend from my course.",
+     "forms": [
+      "die Freundinnen"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--der-arzt",
+     "de": "der Arzt",
+     "en": "doctor (male)",
+     "sDe": "Ich muss heute zum Arzt.",
+     "sEn": "I have to go to the doctor today.",
+     "forms": [
+      "die Ärzte"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--die-aerztin",
+     "de": "die Ärztin",
+     "en": "doctor (female)",
+     "sDe": "Die Ärztin spricht auch Englisch.",
+     "sEn": "The doctor speaks English too.",
+     "forms": [
+      "die Ärztinnen"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--einkaufen",
+     "de": "einkaufen",
+     "en": "to go shopping",
+     "sDe": "Wir gehen nach der Schule einkaufen.",
+     "sEn": "We go shopping after school."
+    },
+    {
+     "id": "basics-everyday-life--das-geld",
+     "de": "das Geld",
+     "en": "money",
+     "sDe": "Ich habe kein Geld dabei.",
+     "sEn": "I don't have any money with me."
+    },
+    {
+     "id": "basics-everyday-life--der-supermarkt",
+     "de": "der Supermarkt",
+     "en": "supermarket",
+     "sDe": "Der Supermarkt ist gleich um die Ecke.",
+     "sEn": "The supermarket is just around the corner.",
+     "forms": [
+      "die Supermärkte"
+     ]
+    },
+    {
+     "id": "basics-everyday-life--das-wetter",
+     "de": "das Wetter",
+     "en": "weather",
+     "sDe": "Das Wetter in Deutschland ist oft kalt.",
+     "sEn": "The weather in Germany is often cold."
+    },
+    {
+     "id": "basics-everyday-life--kalt",
+     "de": "kalt",
+     "en": "cold",
+     "sDe": "Im Winter ist es hier sehr kalt.",
+     "sEn": "In winter it's very cold here."
+    },
+    {
+     "id": "basics-everyday-life--warm",
+     "de": "warm",
+     "en": "warm",
+     "sDe": "In Indien ist es meistens warm.",
+     "sEn": "In India it's usually warm."
+    }
+   ]
+  },
+  {
+   "id": "basics-feelings-and-describing-words",
+   "name": "Basics: Feelings and describing words",
+   "words": [
+    {
+     "id": "basics-feelings-and-describing-words--gut",
+     "de": "gut",
+     "en": "good / well",
+     "sDe": "Mir geht es gut.",
+     "sEn": "I'm fine."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--schlecht",
+     "de": "schlecht",
+     "en": "bad",
+     "sDe": "Mir geht es heute schlecht.",
+     "sEn": "I'm not feeling well today."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--muede",
+     "de": "müde",
+     "en": "tired",
+     "sDe": "Ich bin heute sehr müde.",
+     "sEn": "I'm very tired today."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--krank",
+     "de": "krank",
+     "en": "ill / sick",
+     "sDe": "Ich bin krank und bleibe zu Hause.",
+     "sEn": "I'm ill and staying at home."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--hungrig",
+     "de": "hungrig",
+     "en": "hungry",
+     "sDe": "Nach Sport bin ich immer hungrig.",
+     "sEn": "After PE I'm always hungry."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--gluecklich",
+     "de": "glücklich",
+     "en": "happy",
+     "sDe": "Ich bin glücklich, dass du hier bist.",
+     "sEn": "I'm happy that you're here."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--traurig",
+     "de": "traurig",
+     "en": "sad",
+     "sDe": "Manchmal bin ich traurig, weil ich meine Freunde vermisse.",
+     "sEn": "Sometimes I'm sad because I miss my friends."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--nervoes",
+     "de": "nervös",
+     "en": "nervous",
+     "sDe": "Vor der Klausur bin ich nervös.",
+     "sEn": "I'm nervous before the exam."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--neu",
+     "de": "neu",
+     "en": "new",
+     "sDe": "Ich bin neu in dieser Klasse.",
+     "sEn": "I'm new in this class."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--leicht",
+     "de": "leicht",
+     "en": "easy / light",
+     "sDe": "Die Aufgabe ist leicht.",
+     "sEn": "The task is easy."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--schwer",
+     "de": "schwer",
+     "en": "difficult / heavy",
+     "sDe": "Deutsch ist schwer, aber ich lerne schnell.",
+     "sEn": "German is difficult, but I learn fast."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--richtig",
+     "de": "richtig",
+     "en": "right / correct",
+     "sDe": "Ist meine Antwort richtig?",
+     "sEn": "Is my answer correct?"
+    },
+    {
+     "id": "basics-feelings-and-describing-words--falsch",
+     "de": "falsch",
+     "en": "wrong",
+     "sDe": "Das Wort ist falsch geschrieben.",
+     "sEn": "The word is spelt wrong."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--wichtig",
+     "de": "wichtig",
+     "en": "important",
+     "sDe": "Dieses Wort ist sehr wichtig.",
+     "sEn": "This word is very important."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--gross",
+     "de": "groß",
+     "en": "big / tall",
+     "sDe": "Die Schule ist sehr groß.",
+     "sEn": "The school is very big."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--klein",
+     "de": "klein",
+     "en": "small",
+     "sDe": "Mein Zimmer ist klein.",
+     "sEn": "My room is small."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--schnell",
+     "de": "schnell",
+     "en": "fast / quickly",
+     "sDe": "Sie sprechen zu schnell für mich.",
+     "sEn": "You speak too fast for me."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--langsam",
+     "de": "langsam",
+     "en": "slow / slowly",
+     "sDe": "Bitte sprechen Sie langsam.",
+     "sEn": "Please speak slowly."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--laut",
+     "de": "laut",
+     "en": "loud",
+     "sDe": "Es ist zu laut hier.",
+     "sEn": "It's too loud here."
+    },
+    {
+     "id": "basics-feelings-and-describing-words--leise",
+     "de": "leise",
+     "en": "quiet",
+     "sDe": "Bitte seid leise!",
+     "sEn": "Please be quiet!"
+    },
+    {
+     "id": "basics-feelings-and-describing-words--fertig",
+     "de": "fertig",
+     "en": "finished / ready",
+     "sDe": "Ich bin fertig mit der Aufgabe.",
+     "sEn": "I've finished the task."
+    }
+   ]
+  },
+  {
+   "id": "basics-little-words",
+   "name": "Basics: Little words",
+   "words": [
+    {
+     "id": "basics-little-words--und",
+     "de": "und",
+     "en": "and",
+     "sDe": "Ich spreche Englisch und ein bisschen Deutsch.",
+     "sEn": "I speak English and a little German."
+    },
+    {
+     "id": "basics-little-words--oder",
+     "de": "oder",
+     "en": "or",
+     "sDe": "Möchtest du Tee oder Wasser?",
+     "sEn": "Would you like tea or water?"
+    },
+    {
+     "id": "basics-little-words--aber",
+     "de": "aber",
+     "en": "but",
+     "sDe": "Ich verstehe viel, aber ich spreche noch wenig.",
+     "sEn": "I understand a lot, but I still speak little."
+    },
+    {
+     "id": "basics-little-words--weil",
+     "de": "weil",
+     "en": "because",
+     "sDe": "Ich lerne Deutsch, weil ich hier studieren möchte.",
+     "sEn": "I learn German because I want to study here."
+    },
+    {
+     "id": "basics-little-words--auch",
+     "de": "auch",
+     "en": "also / too",
+     "sDe": "Ich habe auch eine Frage.",
+     "sEn": "I have a question too."
+    },
+    {
+     "id": "basics-little-words--nicht",
+     "de": "nicht",
+     "en": "not",
+     "sDe": "Das verstehe ich nicht.",
+     "sEn": "I don't understand that."
+    },
+    {
+     "id": "basics-little-words--kein",
+     "de": "kein / keine",
+     "en": "no / not a",
+     "sDe": "Ich habe keine Zeit.",
+     "sEn": "I have no time."
+    },
+    {
+     "id": "basics-little-words--noch",
+     "de": "noch",
+     "en": "still / yet",
+     "sDe": "Ich bin noch nicht fertig.",
+     "sEn": "I'm not finished yet."
+    },
+    {
+     "id": "basics-little-words--schon",
+     "de": "schon",
+     "en": "already",
+     "sDe": "Ich bin schon fertig.",
+     "sEn": "I'm already finished."
+    },
+    {
+     "id": "basics-little-words--sehr",
+     "de": "sehr",
+     "en": "very",
+     "sDe": "Das ist sehr interessant.",
+     "sEn": "That's very interesting."
+    },
+    {
+     "id": "basics-little-words--viel",
+     "de": "viel",
+     "en": "much / a lot",
+     "sDe": "Ich habe heute viel gelernt.",
+     "sEn": "I learned a lot today."
+    },
+    {
+     "id": "basics-little-words--ein-bisschen",
+     "de": "ein bisschen",
+     "en": "a little",
+     "sDe": "Ich spreche ein bisschen Deutsch.",
+     "sEn": "I speak a little German."
+    },
+    {
+     "id": "basics-little-words--mit",
+     "de": "mit",
+     "en": "with",
+     "sDe": "Kann ich mit dir arbeiten?",
+     "sEn": "Can I work with you?"
+    },
+    {
+     "id": "basics-little-words--ohne",
+     "de": "ohne",
+     "en": "without",
+     "sDe": "Ich habe die Aufgabe ohne Hilfe gemacht.",
+     "sEn": "I did the task without help."
+    },
+    {
+     "id": "basics-little-words--fuer",
+     "de": "für",
+     "en": "for",
+     "sDe": "Das Heft ist für Mathe.",
+     "sEn": "The exercise book is for maths."
+    },
+    {
+     "id": "basics-little-words--hier",
+     "de": "hier",
+     "en": "here",
+     "sDe": "Ist hier noch frei?",
+     "sEn": "Is this seat free?"
+    },
+    {
+     "id": "basics-little-words--dort",
+     "de": "dort",
+     "en": "there",
+     "sDe": "Dort ist die Bibliothek.",
+     "sEn": "The library is over there."
+    },
+    {
+     "id": "basics-little-words--vielleicht",
+     "de": "vielleicht",
+     "en": "maybe",
+     "sDe": "Vielleicht kommt der Bus später.",
+     "sEn": "Maybe the bus is coming later."
+    },
+    {
+     "id": "basics-little-words--zusammen",
+     "de": "zusammen",
+     "en": "together",
+     "sDe": "Wir machen die Aufgabe zusammen.",
+     "sEn": "We do the task together."
+    }
+   ]
+  }
+ ],
+ "phrases": [
+  {
+   "name": "In class",
+   "items": [
+    {
+     "de": "Ich verstehe das nicht.",
+     "en": "I don't understand that."
+    },
+    {
+     "de": "Können Sie das bitte wiederholen?",
+     "en": "Could you repeat that, please?"
+    },
+    {
+     "de": "Bitte sprechen Sie langsamer.",
+     "en": "Please speak more slowly."
+    },
+    {
+     "de": "Können Sie das bitte aufschreiben?",
+     "en": "Could you write that down, please?"
+    },
+    {
+     "de": "Was bedeutet das?",
+     "en": "What does that mean?"
+    },
+    {
+     "de": "Wie sagt man das auf Deutsch?",
+     "en": "How do you say that in German?"
+    },
+    {
+     "de": "Kann ich das auf Englisch sagen?",
+     "en": "Can I say it in English?"
+    },
+    {
+     "de": "Welche Seite?",
+     "en": "Which page?"
+    },
+    {
+     "de": "Was sollen wir machen?",
+     "en": "What should we do?"
+    },
+    {
+     "de": "Ich habe eine Frage.",
+     "en": "I have a question."
+    },
+    {
+     "de": "Ich bin fertig.",
+     "en": "I'm finished."
+    },
+    {
+     "de": "Ich habe das Arbeitsblatt nicht.",
+     "en": "I don't have the worksheet."
+    },
+    {
+     "de": "Darf ich mein Handy zum Übersetzen benutzen?",
+     "en": "May I use my phone to translate?"
+    },
+    {
+     "de": "Ich habe meine Hausaufgaben vergessen.",
+     "en": "I forgot my homework."
+    },
+    {
+     "de": "Entschuldigung, ich bin zu spät.",
+     "en": "Sorry, I'm late."
+    }
+   ]
+  },
+  {
+   "name": "Asking for help",
+   "items": [
+    {
+     "de": "Können Sie mir bitte helfen?",
+     "en": "Can you help me, please? (to a teacher)"
+    },
+    {
+     "de": "Kannst du mir bitte helfen?",
+     "en": "Can you help me, please? (to a classmate)"
+    },
+    {
+     "de": "Wo ist Raum …?",
+     "en": "Where is room …?"
+    },
+    {
+     "de": "Wo ist die Toilette?",
+     "en": "Where is the toilet?"
+    },
+    {
+     "de": "Darf ich auf die Toilette gehen?",
+     "en": "May I go to the toilet?"
+    },
+    {
+     "de": "Wo ist das Sekretariat?",
+     "en": "Where is the school office?"
+    },
+    {
+     "de": "Wann ist die Pause?",
+     "en": "When is the break?"
+    },
+    {
+     "de": "Welchen Unterricht haben wir jetzt?",
+     "en": "Which lesson do we have now?"
+    },
+    {
+     "de": "Ich habe mich verlaufen.",
+     "en": "I'm lost."
+    },
+    {
+     "de": "Kannst du mir den Weg zeigen?",
+     "en": "Can you show me the way?"
+    }
+   ]
+  },
+  {
+   "name": "About me",
+   "items": [
+    {
+     "de": "Ich heiße …",
+     "en": "My name is …"
+    },
+    {
+     "de": "Ich komme aus Indien.",
+     "en": "I'm from India."
+    },
+    {
+     "de": "Ich bin … Jahre alt.",
+     "en": "I'm … years old."
+    },
+    {
+     "de": "Ich spreche Englisch.",
+     "en": "I speak English."
+    },
+    {
+     "de": "Ich lerne Deutsch.",
+     "en": "I'm learning German."
+    },
+    {
+     "de": "Ich spreche noch nicht gut Deutsch.",
+     "en": "I don't speak German well yet."
+    },
+    {
+     "de": "Ich bin neu hier.",
+     "en": "I'm new here."
+    },
+    {
+     "de": "Ich bin seit … Monaten in Deutschland.",
+     "en": "I've been in Germany for … months."
+    },
+    {
+     "de": "Mein Lieblingsfach ist …",
+     "en": "My favourite subject is …"
+    }
+   ]
+  },
+  {
+   "name": "Classmates",
+   "items": [
+    {
+     "de": "Hallo, wie geht's?",
+     "en": "Hi, how are you?"
+    },
+    {
+     "de": "Mir geht's gut, danke. Und dir?",
+     "en": "I'm fine, thanks. And you?"
+    },
+    {
+     "de": "Ist hier noch frei?",
+     "en": "Is this seat free?"
+    },
+    {
+     "de": "Darf ich mich zu euch setzen?",
+     "en": "May I sit with you?"
+    },
+    {
+     "de": "Kann ich deinen Stift leihen?",
+     "en": "Can I borrow your pen?"
+    },
+    {
+     "de": "Hast du die Hausaufgaben?",
+     "en": "Do you have the homework?"
+    },
+    {
+     "de": "Wollen wir zusammen arbeiten?",
+     "en": "Shall we work together?"
+    },
+    {
+     "de": "Danke, das ist nett.",
+     "en": "Thanks, that's kind."
+    },
+    {
+     "de": "Bis morgen!",
+     "en": "See you tomorrow!"
+    }
+   ]
+  },
+  {
+   "name": "Not feeling well",
+   "items": [
+    {
+     "de": "Mir geht es nicht gut.",
+     "en": "I don't feel well."
+    },
+    {
+     "de": "Ich habe Kopfschmerzen.",
+     "en": "I have a headache."
+    },
+    {
+     "de": "Ich habe Bauchschmerzen.",
+     "en": "I have a stomach ache."
+    },
+    {
+     "de": "Mir ist schlecht.",
+     "en": "I feel sick."
+    },
+    {
+     "de": "Ich muss nach Hause.",
+     "en": "I need to go home."
+    },
+    {
+     "de": "Kann ich meine Eltern anrufen?",
+     "en": "Can I call my parents?"
+    },
+    {
+     "de": "Ich brauche einen Arzt.",
+     "en": "I need a doctor."
+    }
+   ]
+  },
+  {
+   "name": "Canteen and town",
+   "items": [
+    {
+     "de": "Was gibt es heute zu essen?",
+     "en": "What's for lunch today?"
+    },
+    {
+     "de": "Ist das vegetarisch?",
+     "en": "Is that vegetarian?"
+    },
+    {
+     "de": "Ist da Fleisch drin?",
+     "en": "Is there meat in it?"
+    },
+    {
+     "de": "Ich hätte gern …",
+     "en": "I would like …"
+    },
+    {
+     "de": "Wie viel kostet das?",
+     "en": "How much is that?"
+    },
+    {
+     "de": "Wann fährt der Bus?",
+     "en": "When does the bus leave?"
+    },
+    {
+     "de": "Wo ist die Haltestelle?",
+     "en": "Where is the bus stop?"
+    }
+   ]
+  }
+ ]
+}
